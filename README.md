@@ -2,6 +2,14 @@
 
 AIエージェントがゼロからレイアウトを組まず、テーマ・文章・画像の置き換えからLP制作を開始するためのスターターです。
 
+## プレビュー
+
+テンプレートの見た目は、以下からブラウザで確認できます。
+
+🔗 https://anetai-droid.github.io/LP-Template/standalone/LP-Template-Standalone.html
+
+ローカルで確認する場合は `standalone/LP-Template-Standalone.html` をダブルクリックしてください（追加ツール不要）。
+
 ## 構成
 
 - `starter/`: 単体で動作するLPスターター
