@@ -1,0 +1,4 @@
+interface:
+  display_name: "LP Starter Builder"
+  short_description: "Build conversion-focused LPs from a ready-made starter"
+  default_prompt: "Use the bundled LP starter to build a landing page for this project, preserving the implemented image areas and responsive conversion structure."
