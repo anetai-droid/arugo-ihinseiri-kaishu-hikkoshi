@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="埼玉周辺の引っ越し・生前整理・不用品回収を相談できるアルゴのサービス案内。無料見積もり、電話相談、料金目安をご確認いただけます。" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="アルゴ | 引っ越し・生前整理・不用品回収" />
+    <meta property="og:description" content="埼玉周辺で引っ越しや生前整理、不用品回収をお考えの方へ。無料見積もり、電話相談受付。" />
+    <title>アルゴ | 引っ越し・生前整理・不用品回収</title>
+    <link rel="icon" href="preview_assets/arugo-lp/favicon.svg" type="image/svg+xml" />
+    <style>
+:root{
+  --primary:#bd8a35; --primary-dark:#8f641f; --primary-soft:#ecd7ad;
+  --accent:#227c72; --ink:#332f28; --muted:#716a60;
+  --surface:#f8f1e7; --surface-2:#efe0ca; --line:#e7d8c1; --white:#fff;
+  --dark:#363027; --radius:18px; --shadow:0 20px 48px rgba(80,56,24,.13);
+  --container:1140px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;color:var(--ink);background:var(--surface);font-family:"Noto Sans JP","Hiragino Kaku Gothic ProN","Yu Gothic",sans-serif;line-height:1.85;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+h1,h2,h3,p{margin-top:0}
+h1,h2,h3,.brand{line-height:1.4;font-weight:800}
+.container{width:min(calc(100% - 40px),var(--container));margin-inline:auto}
+.narrow{max-width:860px}
+.skip-link{position:fixed;left:1rem;top:-4rem;z-index:100;background:#fff;padding:.7rem 1rem;border-radius:8px}
+.skip-link:focus{top:1rem}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.eyebrow{display:inline-block;margin-bottom:14px;padding:5px 16px;border-radius:999px;background:var(--surface-2);color:var(--primary-dark);font-size:.74rem;font-weight:800;letter-spacing:.16em}
+.section{padding:92px 0}
+.section-cream{background:var(--surface)}
+.section-white{background:var(--white)}
+.section-heading{max-width:760px;margin:0 auto 56px;text-align:center}
+.section-heading h2{font-size:clamp(1.8rem,4vw,2.7rem);letter-spacing:.01em;margin-bottom:14px}
+.section-heading h2 em{color:var(--primary-dark);font-style:normal}
+.section-heading>p:last-child{color:var(--muted);margin-bottom:0}
+.site-header{position:sticky;top:0;z-index:30;background:rgba(248,241,231,.94);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.header-inner{min-height:72px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.brand{display:inline-flex;align-items:center;gap:10px;font-size:1.15rem;letter-spacing:.04em;color:var(--ink)}
+.brand-mark{display:grid;width:40px;height:40px;place-items:center;border-radius:12px;color:#fff;background:linear-gradient(135deg,var(--primary),var(--primary-dark));font-weight:800}
+.desktop-nav{display:flex;align-items:center;gap:24px;font-size:.9rem;font-weight:700}
+.desktop-nav a:not(.button):hover{color:var(--primary-dark)}
+.menu-button,.mobile-nav{display:none}
+.mobile-nav{padding:10px 20px 18px;background:#fff;border-bottom:1px solid var(--line)}
+.mobile-nav a{display:block;padding:12px 0;border-bottom:1px solid var(--line);font-weight:700}
+.button{display:inline-flex;min-height:52px;align-items:center;justify-content:center;gap:8px;padding:12px 28px;border-radius:999px;background:linear-gradient(135deg,var(--primary),var(--primary-dark));color:#fff;font-weight:800;border:0;box-shadow:0 12px 24px rgba(143,100,31,.28);transition:.2s}
+.button:hover{transform:translateY(-2px);box-shadow:0 16px 30px rgba(143,100,31,.34)}
+.button-secondary{background:#fff;color:var(--primary-dark);border:1.5px solid var(--primary-soft);box-shadow:none}
+.button-small{min-height:44px;padding:9px 20px;font-size:.9rem}
+.button-light{background:#fff;color:var(--primary-dark);box-shadow:0 12px 26px rgba(80,60,20,.22)}
+.hero{position:relative;min-height:620px;overflow:hidden;color:#fff;background:var(--dark)}
+.hero-photo{position:absolute;inset:0;z-index:0;background:var(--hero-image, url("preview_assets/arugo-lp/images/1.webp")) center/cover no-repeat;transform:scale(1.02)}
+.hero-overlay{position:absolute;inset:0;z-index:1;background:linear-gradient(100deg,rgba(38,32,23,.88) 0%,rgba(52,41,28,.66) 46%,rgba(52,41,28,.15) 74%,transparent 100%)}
+.hero-grid{position:relative;z-index:2;min-height:620px;display:flex;align-items:flex-end;justify-content:space-between;gap:40px;padding:120px 0 48px}
+.hero-copy{max-width:660px}
+.hero-copy h1{font-size:clamp(2.2rem,4.6vw,3.6rem);letter-spacing:.01em;margin-bottom:20px;color:#fff;text-shadow:0 2px 16px rgba(0,0,0,.55)}
+.hero-copy h1 em{color:var(--primary-soft);font-style:normal}
+.hero .eyebrow{background:rgba(255,255,255,.18);color:#fff}
+.hero-lead{font-size:1.06rem;color:#fff;max-width:36em;margin-bottom:28px;text-shadow:0 1px 10px rgba(0,0,0,.55)}
+.hero-cta{display:flex;flex-wrap:wrap;gap:14px;align-items:center}
+.hero .button-secondary{background:rgba(255,255,255,.16);color:#fff;border:1.5px solid rgba(255,255,255,.55);backdrop-filter:blur(4px)}
+.hero-points{display:flex;flex-wrap:wrap;gap:8px 18px;padding:0;margin:26px 0 0;list-style:none;font-size:.86rem;font-weight:700;color:#fff;text-shadow:0 1px 8px rgba(0,0,0,.6)}
+.hero-points li::before{content:"✓";margin-right:7px;color:var(--primary-soft);font-weight:900}
+.hero-badge{flex:0 0 auto;align-self:flex-end;display:flex;flex-direction:column;min-width:230px;padding:16px 22px;border-left:4px solid var(--primary);border-radius:14px;background:rgba(255,255,255,.96);color:var(--ink);box-shadow:0 18px 45px rgba(0,0,0,.28)}
+.hero-badge small{color:var(--muted);font-size:.72rem;font-weight:700}
+.hero-badge b{color:var(--primary-dark);font-size:1.4rem}
+.notice{max-width:860px;margin:0 auto 26px;padding:16px 20px;border:2px solid var(--accent);border-radius:14px;background:#eef8f6;color:#215f58;font-weight:700}
+.worry-box{max-width:760px;margin:0 auto;background:var(--surface);border:2px dashed var(--primary-soft);border-radius:var(--radius);padding:clamp(26px,4vw,42px)}
+.worry-list{list-style:none;padding:0;margin:0;display:grid;gap:14px}
+.worry-list li{display:flex;gap:12px;align-items:flex-start;font-weight:700;font-size:1.02rem}
+.worry-list li::before{content:"";flex:0 0 auto;margin-top:5px;width:18px;height:18px;border-radius:50%;background:var(--primary-soft);box-shadow:0 0 0 4px rgba(236,215,173,.3)}
+.banner{max-width:760px;margin:28px auto 0;text-align:center;background:linear-gradient(135deg,var(--primary),var(--primary-dark));color:#fff;border-radius:var(--radius);padding:26px 24px}
+.banner strong{display:block;font-size:clamp(1.3rem,3vw,1.9rem);margin-bottom:6px}
+.banner span{font-size:.92rem;opacity:.92}
+.points-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;max-width:1000px;margin:0 auto}
+.point-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:34px 26px 30px;text-align:center;box-shadow:var(--shadow)}
+.point-img{width:148px;height:148px;border-radius:50%;object-fit:cover;margin:0 auto 18px;border:5px solid var(--surface-2)}
+.point-label{display:block;color:var(--primary);font-weight:800;font-size:.82rem;letter-spacing:.14em;margin-bottom:8px}
+.point-card h3{font-size:1.22rem;margin-bottom:10px}
+.point-card p{color:var(--muted);font-size:.94rem;margin:0}
+.feature-row{display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:clamp(36px,6vw,72px);margin-top:60px}
+.feature-row:first-of-type{margin-top:0}
+.feature-row.reverse figure{order:2}
+.media-frame{margin:0;overflow:hidden;border-radius:var(--radius);box-shadow:var(--shadow);background:var(--surface-2)}
+.media-frame img{width:100%;height:100%;object-fit:cover;aspect-ratio:3/2}
+.feature-label{display:inline-block;margin-bottom:12px;color:var(--primary);font-weight:800;font-size:.82rem;letter-spacing:.12em}
+.feature-row h3{font-size:clamp(1.5rem,3vw,2.1rem);margin-bottom:12px}
+.feature-row p{color:var(--muted)}
+.check-list{padding:0;margin:20px 0 0;list-style:none;font-weight:700}
+.check-list li{padding:9px 0;border-bottom:1px solid var(--line)}
+.check-list li::before{content:"✓";margin-right:9px;color:var(--accent);font-weight:900}
+.price-wrap{max-width:840px;margin:0 auto;overflow-x:auto}
+.price-table{width:100%;border-collapse:collapse;background:#fff;border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow)}
+.price-table th,.price-table td{padding:14px 16px;border-bottom:1px solid var(--line);text-align:left;font-size:.98rem;white-space:nowrap}
+.price-table thead th{background:var(--primary);color:#fff;font-weight:800}
+.price-table tbody tr:nth-child(even){background:var(--surface)}
+.price-table td:nth-child(2){font-weight:800;color:var(--primary-dark)}
+.price-table tbody tr:last-child td{border-bottom:0}
+.price-note{margin-top:14px;font-size:.85rem;color:var(--muted)}
+.gallery-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.gallery-item{margin:0;overflow:hidden;border-radius:var(--radius);background:#fff;border:1px solid var(--line);box-shadow:var(--shadow)}
+.gallery-item img{width:100%;aspect-ratio:3/2;object-fit:cover}
+.gallery-item figcaption{padding:14px 16px;color:var(--ink);font-size:.9rem;font-weight:700;text-align:center}
+.note{margin-top:26px;text-align:center;color:var(--muted);font-size:.76rem}
+.steps{display:grid;grid-template-columns:repeat(5,1fr);gap:16px;padding:0;list-style:none;counter-reset:step}
+.steps li{position:relative;background:#fff;border:1px solid var(--line);border-radius:18px;padding:28px 18px 22px;text-align:center}
+.steps li span{display:grid;place-items:center;width:42px;height:42px;margin:0 auto 12px;border-radius:50%;background:var(--primary);color:#fff;font-weight:800}
+.steps li h3{font-size:1.02rem;margin-bottom:6px}
+.steps li p{color:var(--muted);font-size:.86rem;margin:0}
+.faq-list{display:grid;gap:14px}
+details{background:#fff;border:1px solid var(--line);border-radius:16px;padding:20px 24px}
+summary{cursor:pointer;font-weight:800;list-style:none}
+summary::-webkit-details-marker{display:none}
+summary::before{content:"Q ";color:var(--primary);font-weight:900}
+details p{margin:14px 0 0;color:var(--muted)}
+.final-cta{background:linear-gradient(135deg,var(--primary),var(--primary-dark));color:#fff;text-align:center}
+.final-cta .eyebrow{background:rgba(255,255,255,.2);color:#fff}
+.final-cta h2{font-size:clamp(1.7rem,4vw,2.6rem);margin-bottom:14px;color:#fff}
+.final-cta-lead{max-width:640px;margin:0 auto 22px;opacity:.94}
+.final-cta-tel{font-size:1.7rem;font-weight:800;margin:6px 0 18px}
+.final-cta-links{display:flex;justify-content:center;gap:28px;margin-top:18px;font-size:.85rem;font-weight:700}
+.final-cta-links a{border-bottom:1px solid rgba(255,255,255,.6);padding-bottom:2px}
+.site-footer{background:var(--dark);color:rgba(255,255,255,.82);padding:36px 0}
+.footer-inner{display:flex;flex-wrap:wrap;justify-content:space-between;gap:18px;align-items:center}
+.site-footer .brand{color:#fff}
+.site-footer .brand-mark{background:#fff;color:var(--primary-dark)}
+.legal-links{display:flex;flex-wrap:wrap;gap:18px;font-size:.78rem;font-weight:700}
+.legal-links a{text-decoration:underline;text-underline-offset:4px}
+.site-footer small{display:block;width:100%;margin-top:6px;color:rgba(255,255,255,.55);font-size:.72rem}
+.floating-cta{display:none}
+.reveal{opacity:0;transform:translateY(20px);transition:opacity .6s ease,transform .6s ease}
+.reveal.is-visible{opacity:1;transform:none}
+.legal-page{background:var(--surface);min-height:100vh}
+.legal-header{padding:46px 0 28px;background:linear-gradient(135deg,var(--primary),var(--primary-dark));color:#fff}
+.legal-header h1{margin:8px 0 6px;font-size:clamp(1.7rem,4vw,2.6rem)}
+.legal-header p{margin:0;opacity:.85}
+.legal-content{padding:50px 0 80px}
+.legal-content article{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:clamp(24px,5vw,52px);box-shadow:var(--shadow)}
+.legal-content h2{margin:34px 0 10px;font-size:1.25rem}
+.legal-content h2:first-child{margin-top:0}
+.legal-content p,.legal-content li{color:var(--muted)}
+.legal-content table{width:100%;border-collapse:collapse;font-size:.92rem}
+.legal-content th,.legal-content td{padding:13px;border:1px solid var(--line);text-align:left;vertical-align:top}
+.legal-content th{width:30%;background:var(--surface)}
+.template-warning{margin-bottom:26px;padding:16px 20px;border:2px solid var(--accent);border-radius:14px;background:#eef8f6;color:#215f58;font-weight:700}
+.legal-footer{padding:24px 0;background:var(--dark);color:#fff}
+.legal-footer .container{display:flex;flex-wrap:wrap;gap:18px;justify-content:space-between}
+.legal-footer a{text-decoration:underline;text-underline-offset:4px}
+@media(max-width:880px){
+  .desktop-nav{display:none}
+  .menu-button{display:inline-flex;padding:9px 14px;border:1px solid var(--line);border-radius:10px;background:#fff;font-weight:800}
+  .mobile-nav:not([hidden]){display:block}
+  .hero{min-height:560px}
+  .hero-grid{min-height:560px;padding:100px 0 36px}
+  .hero-photo{background-position:60% center}
+  .hero-badge{display:none}
+  .feature-row,.feature-row.reverse{grid-template-columns:1fr}
+  .feature-row.reverse figure{order:initial}
+  .points-grid{grid-template-columns:1fr;max-width:420px}
+  .gallery-grid{grid-template-columns:1fr 1fr}
+  .steps{grid-template-columns:1fr 1fr}
+  .floating-cta{position:fixed;right:14px;bottom:14px;z-index:40;display:inline-flex;padding:13px 22px;border-radius:999px;background:linear-gradient(135deg,var(--primary),var(--primary-dark));color:#fff;font-weight:800;box-shadow:var(--shadow)}
+}
+@media(max-width:520px){
+  .section{padding:64px 0}
+  .gallery-grid,.steps{grid-template-columns:1fr}
+  .hero-cta{gap:12px}
+  .final-cta-links{flex-direction:column;gap:10px}
+}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{transition:none!important;scroll-behavior:auto!important}.reveal{opacity:1;transform:none}}
+
+</style>
+<script>
+function init(){const e=document.querySelector(".menu-button"),t=document.querySelector("#mobile-nav");e?.addEventListener("click",()=>{const n=e.getAttribute("aria-expanded")==="true";e.setAttribute("aria-expanded",String(!n)),e.setAttribute("aria-label",n?"メニューを開く":"メニューを閉じる"),t&&(t.hidden=n)}),t?.querySelectorAll("a").forEach(n=>{n.addEventListener("click",()=>{e&&(e.setAttribute("aria-expanded","false"),e.setAttribute("aria-label","メニューを開く"),t.hidden=!0)})}),document.addEventListener("keydown",n=>{n.key==="Escape"&&t&&!t.hidden&&e&&(e.setAttribute("aria-expanded","false"),e.setAttribute("aria-label","メニューを開く"),t.hidden=!0,e.focus())});if(!("IntersectionObserver"in window)){document.querySelectorAll(".reveal").forEach(n=>n.classList.add("is-visible"));return}const o=new IntersectionObserver(n=>n.forEach(r=>r.isIntersecting&&r.target.classList.add("is-visible")),{threshold:.12});document.querySelectorAll(".reveal").forEach(n=>o.observe(n))}document.readyState==="loading"?document.addEventListener("DOMContentLoaded",init):init();
+</script>
+  </head>
+  <body data-preview="arugo-lp" class="site-arugo">
+    <a class="skip-link" href="#main">本文へスキップ</a>
+    <header class="site-header"><div class="container header-inner"><a class="brand" href="./arugo-lp-プレビュー.html" aria-label="アルゴ ホーム"><span class="brand-mark">あ</span><span>アルゴ</span></a><nav class="desktop-nav" aria-label="メインナビゲーション"><a href="#needs">お悩み</a><a href="#services">サービス</a><a href="#price">料金</a><a href="#flow">流れ</a><a href="#faq">FAQ</a><a class="button button-small" href="#contact">無料見積もり</a></nav><button class="menu-button" type="button" aria-expanded="false" aria-controls="mobile-nav" aria-label="メニューを開く">メニュー</button></div><nav id="mobile-nav" class="mobile-nav" aria-label="モバイルナビゲーション" hidden><a href="#needs">お悩み</a><a href="#services">サービス</a><a href="#price">料金</a><a href="#flow">流れ</a><a href="#faq">FAQ</a><a href="#contact">無料見積もり</a></nav></header>
+    <main id="main">
+      <section class="hero" style="--hero-image:url('preview_assets/arugo-lp/images/10.png')"><div class="hero-photo" role="img" aria-label="引っ越しと片付け作業のイメージ"></div><div class="hero-overlay" aria-hidden="true"></div><div class="container hero-grid"><div class="hero-copy reveal"><span class="eyebrow">引っ越し・生前整理・不用品回収</span><h1>引っ越し前後の片付けを、<br /><em>まとめて相談</em>できます。</h1><p class="hero-lead">埼玉周辺で、引っ越し・生前整理・不用品回収を一度に相談したい方へ。荷造り、仕分け、搬出、回収まで必要な作業を見積もりから整理します。</p><div class="hero-cta"><a class="button" href="#contact">無料見積もりを依頼する</a><a class="button button-secondary" href="#price">料金を見る</a></div><ul class="hero-points"><li>埼玉周辺対応</li><li>電話相談OK</li><li>見積もり無料</li></ul></div><div class="hero-badge reveal"><small>電話受付 9:30〜20:00</small><b>090-2449-3321</b></div></div></section>
+      
+      <section id="needs" class="section section-cream"><div class="container"><div class="section-heading reveal"><span class="eyebrow">NEEDS</span><h2>こんな場面で<em>ご相談ください</em></h2></div><div class="worry-box reveal"><ul class="worry-list"><li>引っ越し前に荷物が多く、どこから片付けるべきか分からない</li><li>大型家具や家電を自分で運び出せない</li><li>生前整理で残す物と手放す物を整理したい</li><li>引っ越しと不用品回収を別々に頼むのが面倒</li><li>急ぎの日程で相談したい</li></ul></div><div class="banner reveal"><strong>片付けと回収をまとめて相談</strong><span>引っ越し前後の片付け、生前整理、不用品回収まで、必要な作業をまとめてご相談いただけます。</span></div></div></section>
+      <section id="services" class="section section-white"><div class="container"><div class="section-heading reveal"><span class="eyebrow">SERVICES</span><h2>まとめて頼める<em>3つの作業</em></h2></div><div class="points-grid"><article class="point-card reveal"><img class="point-img" src="preview_assets/arugo-lp/images/9.png" alt="引っ越し荷物の整理" /><span class="point-label">01</span><h3>引っ越し前後の片付け</h3><p>荷造り、搬出前の整理、不用品の分別までまとめて相談できます。</p></article><article class="point-card reveal"><img class="point-img" src="preview_assets/arugo-lp/images/12.png" alt="生前整理の仕分け" /><span class="point-label">02</span><h3>生前整理</h3><p>これからの暮らしを整えるために、必要な物と手放す物を一緒に整理します。</p></article><article class="point-card reveal"><img class="point-img" src="preview_assets/arugo-lp/images/11.png" alt="不用品回収" /><span class="point-label">03</span><h3>不用品回収</h3><p>家具・家電など、自分では運びにくい物の回収を見積もりから案内します。</p></article></div></div></section>
+      <section id="price" class="section section-cream"><div class="container"><div class="section-heading reveal"><span class="eyebrow">PRICE</span><h2>引っ越し作業の<em>料金目安</em></h2><p>引っ越し作業の料金目安です。正式な金額は、物量や距離を確認してお見積もりします。</p></div><div class="price-wrap reveal"><table class="price-table"><thead><tr><th>間取り</th><th>料金の目安</th></tr></thead><tbody><tr><td>1K</td><td>30,000円〜</td></tr><tr><td>1DK</td><td>40,000円〜</td></tr><tr><td>1LDK</td><td>60,000円〜</td></tr><tr><td>2DK</td><td>80,000円〜</td></tr><tr><td>2LDK</td><td>120,000円〜</td></tr></tbody></table><p class="price-note">物量、距離、階段、駐車条件、不用品回収の有無により変動します。正式料金は見積もりで確定します。</p></div></div></section>
+      <section id="flow" class="section section-white"><div class="container"><div class="section-heading reveal"><span class="eyebrow">FLOW</span><h2>ご相談から<em>作業完了まで</em></h2></div><ol class="steps reveal"><li><span>1</span><h3>お問い合わせ</h3><p>電話またはフォームから相談。</p></li><li><span>2</span><h3>内容確認</h3><p>荷物量・日程・住所を確認。</p></li><li><span>3</span><h3>見積もり</h3><p>条件に応じて費用を提示。</p></li><li><span>4</span><h3>作業</h3><p>整理・搬出・回収を実施。</p></li><li><span>5</span><h3>お支払い</h3><p>作業完了後に精算。</p></li></ol></div></section>
+      <section id="faq" class="section section-cream"><div class="container narrow"><div class="section-heading reveal"><span class="eyebrow">FAQ</span><h2>よくある<em>質問</em></h2></div><div class="faq-list reveal"><details><summary>急ぎの引っ越しや片付けも相談できますか？</summary><p>日程と作業量により対応可否が変わります。まずは電話で状況をご相談ください。</p></details><details><summary>女性スタッフ中心の作業は可能ですか？</summary><p>ご希望がある場合は、見積もり時に体制を確認してご案内します。</p></details><details><summary>不用品回収だけでも頼めますか？</summary><p>可能です。品目、量、搬出条件を確認して見積もります。</p></details></div></div></section>
+      <section id="contact" class="section final-cta"><div class="container reveal"><span class="eyebrow">CONTACT</span><h2>引っ越し前後の片付けを相談する。</h2><p class="final-cta-lead">まずはお電話で状況をお聞かせください。無料見積もりをご案内します。</p><div class="final-cta-tel">090-2449-3321</div><a class="button button-light" href="tel:09024493321">電話で相談する</a><div class="final-cta-links"><a href="#price">料金を見る</a><a href="arugo-lp-法定表記.html">事業者情報</a></div></div></section>
+    </main>
+    <footer class="site-footer"><div class="container footer-inner"><a class="brand" href="./arugo-lp-プレビュー.html"><span class="brand-mark">あ</span><span>アルゴ</span></a><nav class="legal-links" aria-label="法務情報"><a href="arugo-lp-プライバシー.html">プライバシーポリシー</a><a href="arugo-lp-法定表記.html">事業者情報</a></nav><small>© 2026 あるご合同会社 / TEL 090-2449-3321 / 埼玉県を中心に近郊対応</small></div></footer>
+    <a class="floating-cta" href="#contact">無料見積もり</a>
+  </bo
