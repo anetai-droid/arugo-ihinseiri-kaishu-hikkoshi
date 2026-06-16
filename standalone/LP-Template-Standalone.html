@@ -96,6 +96,14 @@ h1,h2{font-family:"Yu Mincho","YuMincho","Hiragino Mincho ProN",serif;font-weigh
 .banner{max-width:780px;margin:26px auto 0;text-align:center;background:var(--grad);color:#fff;border-radius:var(--radius);padding:26px 24px}
 .banner strong{display:block;font-size:clamp(1.3rem,3vw,1.9rem);margin-bottom:6px}
 .banner span{font-size:.92rem;opacity:.92}
+.worry-layout{display:grid;grid-template-columns:1fr 1fr;gap:clamp(28px,5vw,56px);align-items:center;max-width:1120px;margin:0 auto}
+.worry-illust{display:grid;place-items:center}
+.worry-illust img{width:100%;max-width:500px;mix-blend-mode:multiply}
+.worry-main .worry-box{max-width:none;margin:0}
+.worry-main .banner{max-width:none;margin:22px 0 0}
+@media(max-width:900px){.worry-layout{grid-template-columns:1fr}.worry-illust{order:-1}.worry-illust img{max-width:300px}}
+section[data-section="worries"]{padding:60px 0}
+section[data-section="worries"] .section-heading{margin-bottom:34px}
 
 /* before/after */
 .ba-grid{display:grid;grid-template-columns:1fr auto 1fr;align-items:stretch;gap:24px;max-width:1000px;margin:0 auto}
@@ -105,6 +113,12 @@ h1,h2{font-family:"Yu Mincho","YuMincho","Hiragino Mincho ProN",serif;font-weigh
 .ba-cards{display:grid;gap:16px}
 .ba-cards .ba-arrow{justify-self:center}
 @media(max-width:900px){.ba-layout{grid-template-columns:1fr}.ba-illust{order:-1}.ba-illust img{max-width:280px}}
+.ba-split{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(28px,5vw,56px);align-items:center;max-width:1120px;margin:0 auto}
+.ba-cards2{display:grid;gap:16px}
+.ba-cards2 .ba-arrow{justify-self:center}
+.ba-photo{margin:0;border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow)}
+.ba-photo img{width:100%;height:100%;object-fit:cover;aspect-ratio:4/5}
+@media(max-width:900px){.ba-split{grid-template-columns:1fr}.ba-photo{order:-1}.ba-photo img{aspect-ratio:16/10}}
 section[data-section="beforeafter"]{position:relative;overflow:hidden}
 section[data-section="beforeafter"] .container{position:relative;z-index:1}
 .deco-truck{position:absolute;top:-24px;left:-56px;width:360px;max-width:42vw;z-index:0;pointer-events:none;mix-blend-mode:multiply}
@@ -242,6 +256,18 @@ details p{margin:14px 0 0 34px;color:var(--muted)}
 .pay-grid{display:flex;flex-wrap:wrap;justify-content:center;gap:14px;max-width:780px;margin:0 auto}
 .pay-grid span{display:inline-flex;align-items:center;gap:8px;padding:12px 22px;border:1px solid var(--line);border-radius:999px;background:#fff;font-weight:700;font-size:.95rem;box-shadow:var(--shadow)}
 .pay-note{margin-top:20px;text-align:center;color:var(--muted);font-size:.85rem}
+.pay-layout{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(28px,5vw,56px);align-items:center;max-width:1080px;margin:0 auto}
+.pay-illust{display:grid;place-items:center}
+.pay-illust img{width:100%;max-width:360px;mix-blend-mode:multiply}
+.pay-main .pay-grid{justify-content:flex-start}
+.pay-main .pay-note{text-align:left;margin-top:18px}
+@media(max-width:900px){.pay-layout{grid-template-columns:1fr}.pay-illust{order:-1}.pay-illust img{max-width:260px}.pay-main .pay-grid{justify-content:center}.pay-main .pay-note{text-align:center}}
+.pay-methods{display:grid;gap:14px}
+.pay-method{display:flex;align-items:center;gap:16px;background:#fff;border:1px solid var(--line);border-radius:14px;padding:16px 20px;box-shadow:var(--shadow)}
+.pay-ic{flex:0 0 auto;display:grid;place-items:center;width:48px;height:48px;border-radius:12px;background:var(--grad);color:#fff;font-weight:800;font-size:1.25rem}
+.pay-ic svg{width:24px;height:24px}
+.pay-tx b{display:block;font-size:1.02rem;line-height:1.4}
+.pay-tx small{color:var(--muted);font-size:.82rem}
 /* voices */
 .voice-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
 .voice-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:28px;box-shadow:var(--shadow)}
@@ -349,16 +375,21 @@ details p{margin:14px 0 0 34px;color:var(--muted)}
       <section class="section section-tint" data-section="worries">
         <div class="container">
           <div class="section-heading reveal"><span class="eyebrow">WORRIES</span><h2>こんなお悩みは<em>ありませんか？</em></h2></div>
-          <div class="worry-box reveal">
-            <ul class="worry-list">
-              <li>親族の家を片付けたいが、何から手を付ければいいか分からない</li>
-              <li>思い出の品を、いきなり処分するのは気が引ける</li>
-              <li>家具や家電の処分費用の負担が大きい</li>
-              <li>遠方に住んでいて立ち会いが難しい</li>
-              <li>引っ越しと不用品の処分をまとめてお願いしたい</li>
-            </ul>
+          <div class="worry-layout">
+            <div class="worry-illust"><img src="../starter/public/images/24.png" alt="お悩みのご夫婦のイラスト" loading="lazy" /></div>
+            <div class="worry-main">
+              <div class="worry-box reveal">
+                <ul class="worry-list">
+                  <li>親族の家を片付けたいが、何から手を付ければいいか分からない</li>
+                  <li>思い出の品を、いきなり処分するのは気が引ける</li>
+                  <li>家具や家電の処分費用の負担が大きい</li>
+                  <li>遠方に住んでいて立ち会いが難しい</li>
+                  <li>引っ越しと不用品の処分をまとめてお願いしたい</li>
+                </ul>
+              </div>
+              <div class="banner reveal"><strong>あるごにお任せください！</strong><span>仕分けから買取・回収・清掃・引っ越しまで、まるごと丁寧にお引き受けします。</span></div>
+            </div>
           </div>
-          <div class="banner reveal"><strong>あるごにお任せください！</strong><span>仕分けから買取・回収・清掃・引っ越しまで、まるごと丁寧にお引き受けします。</span></div>
         </div>
       </section>
 
@@ -366,16 +397,19 @@ details p{margin:14px 0 0 34px;color:var(--muted)}
         <img class="deco-truck" src="../starter/public/images/19.png" alt="" aria-hidden="true" loading="lazy" />
         <div class="container">
           <div class="section-heading reveal"><span class="eyebrow">BEFORE / AFTER</span><h2>あるごに頼むと、<em>こう変わります</em></h2></div>
-          <div class="ba-grid reveal">
-            <div class="ba-card ba-before">
-              <h3><span class="ba-tag">Before</span>ご依頼前</h3>
-              <ul><li>処分費用がかさんで負担が大きい</li><li>何から手を付ければいいか分からない</li><li>立ち会いの時間が取れない</li><li>引っ越しと処分で業者がバラバラ</li></ul>
+          <div class="ba-split reveal">
+            <div class="ba-cards2">
+              <div class="ba-card ba-before">
+                <h3><span class="ba-tag">Before</span>ご依頼前</h3>
+                <ul><li>処分費用がかさんで負担が大きい</li><li>何から手を付ければいいか分からない</li><li>立ち会いの時間が取れない</li><li>引っ越しと処分で業者がバラバラ</li></ul>
+              </div>
+              <div class="ba-arrow" aria-hidden="true">↓</div>
+              <div class="ba-card ba-after">
+                <h3><span class="ba-tag">After</span>ご依頼後</h3>
+                <ul><li>買取で処分費用を圧縮できる</li><li>仕分けから清掃までおまかせ</li><li>立ち会いは最小限でOK</li><li>整理・買取・引っ越しを1社で完結</li></ul>
+              </div>
             </div>
-            <div class="ba-arrow" aria-hidden="true">→</div>
-            <div class="ba-card ba-after">
-              <h3><span class="ba-tag">After</span>ご依頼後</h3>
-              <ul><li>買取で処分費用を圧縮できる</li><li>仕分けから清掃までおまかせ</li><li>立ち会いは最小限でOK</li><li>整理・買取・引っ越しを1社で完結</li></ul>
-            </div>
+            <figure class="ba-photo"><img src="../starter/public/images/25.png" alt="作業スタッフと車両" loading="lazy" /></figure>
           </div>
         </div>
       </section>
@@ -458,13 +492,20 @@ details p{margin:14px 0 0 34px;color:var(--muted)}
         </div>
       </section>
 
-      <section class="section section-soft" data-section="payment">
+      <section class="section" data-section="payment">
         <div class="container">
           <div class="section-heading reveal"><span class="eyebrow">PAYMENT</span><h2>お支払い<em>方法</em></h2><p>現金のほか、各種スマホ決済・キャッシュレス決済に対応しています。</p></div>
-          <div class="pay-grid reveal">
-            <span>現金</span><span>スマホ決済（PayPay 等）</span><span>各種キャッシュレス決済</span>
+          <div class="pay-layout">
+            <div class="pay-illust"><img src="../starter/public/images/26.png" alt="お支払い方法のイラスト" loading="lazy" /></div>
+            <div class="pay-main">
+              <div class="pay-methods reveal">
+                <div class="pay-method"><span class="pay-ic">¥</span><div class="pay-tx"><b>現金</b><small>その場でお支払い</small></div></div>
+                <div class="pay-method"><span class="pay-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="7" y="2.5" width="10" height="19" rx="2.5"/><line x1="10.5" y1="18.5" x2="13.5" y2="18.5"/></svg></span><div class="pay-tx"><b>スマホ決済</b><small>PayPay 等に対応</small></div></div>
+                <div class="pay-method"><span class="pay-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="2.5" y="5" width="19" height="14" rx="2.5"/><line x1="2.5" y1="10" x2="21.5" y2="10"/></svg></span><div class="pay-tx"><b>キャッシュレス決済</b><small>各種カード等</small></div></div>
+              </div>
+              <p class="pay-note reveal">買取が成立した場合は、その分を作業費から差し引いて精算します。ご利用可能な決済の詳細はお問い合わせください。</p>
+            </div>
           </div>
-          <p class="pay-note reveal">買取が成立した場合は、その分を作業費から差し引いて精算します。ご利用可能な決済の詳細はお問い合わせください。</p>
         </div>
       </section>
 
@@ -484,15 +525,6 @@ details p{margin:14px 0 0 34px;color:var(--muted)}
         </div>
       </section>
 
-      <section id="staff" class="section section-soft" data-section="staff">
-        <div class="container">
-          <div class="section-heading reveal"><span class="eyebrow">STAFF</span><h2>スタッフ<em>紹介</em></h2><p>※氏名・経歴・コメントは確定後に差し替えてください。</p></div>
-          <div class="staff-grid">
-            <article class="staff-card reveal"><div class="staff-ava">あ</div><div><h3>【要確認：氏名】</h3><div class="role">代表 / 整理士</div><p>ご遺族様のお気持ちに寄り添い、一つひとつ丁寧に作業することを大切にしています。</p></div></article>
-            <article class="staff-card reveal"><div class="staff-ava">る</div><div><h3>【要確認：氏名】</h3><div class="role">スタッフ</div><p>仕分け・買取から搬出・清掃まで、安心してお任せいただけるよう努めます。</p></div></article>
-          </div>
-        </div>
-      </section>
 
 
       <section class="section section-tint" data-section="flow">
