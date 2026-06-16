@@ -13,7 +13,7 @@
     <style>
 :root{
   --primary:#2b2b2b; --primary-dark:#111; --navy:#1c1c1c; --navy-2:#141414;
-  --primary-soft:#ececec; --accent:#2b2b2b;
+  --primary-soft:#ececec; --accent:#2b2b2b; --grad:linear-gradient(120deg,#13a89e 0%,#1d6fb8 100%);
   --ink:#1a1a1a; --muted:#6f6f6f;
   --surface:#f5f4f2; --surface-2:#ecebe7; --line:#e3e1dd; --white:#fff;
   --radius:14px; --shadow:0 14px 36px rgba(0,0,0,.10); --container:1160px;
@@ -50,21 +50,21 @@ h1,h2{font-family:"Yu Mincho","YuMincho","Hiragino Mincho ProN",serif;font-weigh
 .site-header{position:sticky;top:0;z-index:30;background:rgba(255,255,255,.94);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
 .header-inner{min-height:72px;display:flex;align-items:center;justify-content:space-between;gap:24px}
 .brand{display:inline-flex;align-items:center;gap:10px;font-size:1.15rem;color:var(--ink)}
-.brand-mark{display:grid;width:40px;height:40px;place-items:center;border-radius:12px;color:#fff;background:linear-gradient(135deg,var(--primary),var(--navy));font-weight:800}
+.brand-mark{display:grid;width:40px;height:40px;place-items:center;border-radius:12px;color:#fff;background:var(--grad);font-weight:800}
 .desktop-nav{display:flex;align-items:center;gap:24px;font-size:.9rem;font-weight:700}
 .desktop-nav a:not(.button):hover{color:var(--primary)}
 .menu-button,.mobile-nav{display:none}
 .mobile-nav{padding:10px 20px 18px;background:#fff;border-bottom:1px solid var(--line)}
 .mobile-nav a{display:block;padding:12px 0;border-bottom:1px solid var(--line);font-weight:700}
-.button{display:inline-flex;min-height:52px;align-items:center;justify-content:center;gap:8px;padding:12px 28px;border-radius:999px;background:var(--ink);color:#fff;font-weight:800;border:0;box-shadow:0 12px 24px rgba(0,0,0,.18);transition:.2s}
-.button:hover{transform:translateY(-2px);box-shadow:0 16px 30px rgba(0,0,0,.24)}
-.button-primary{background:linear-gradient(135deg,var(--primary),var(--navy));box-shadow:0 12px 24px rgba(29,78,216,.3)}
+.button{display:inline-flex;min-height:52px;align-items:center;justify-content:center;gap:8px;padding:12px 28px;border-radius:999px;background:var(--grad);color:#fff;font-weight:800;border:0;box-shadow:0 12px 24px rgba(20,120,160,.32);transition:.2s}
+.button:hover{transform:translateY(-2px);box-shadow:0 16px 30px rgba(20,120,160,.4)}
+.button-primary{background:var(--grad);box-shadow:0 12px 24px rgba(29,78,216,.3)}
 .button-secondary{background:#fff;color:var(--primary);border:1.5px solid var(--primary-soft);box-shadow:none}
 .button-small{min-height:44px;padding:9px 20px;font-size:.9rem}
 
 /* hero */
 .hero{position:relative;min-height:640px;overflow:hidden;color:#fff;background:var(--navy)}
-.hero-photo{position:absolute;inset:0;z-index:0;background:url("../starter/public/images/16.png") center/cover no-repeat;transform:scale(1.02)}
+.hero-photo{position:absolute;inset:0;z-index:0;background:url("../starter/public/images/18.png") center/cover no-repeat;transform:scale(1.02)}
 .hero-overlay{display:none}
 .hero-grid{position:relative;z-index:2;min-height:640px;display:flex;align-items:flex-end;justify-content:space-between;gap:40px;padding:124px 0 52px}
 .hero-copy{max-width:660px}
@@ -82,7 +82,7 @@ h1,h2{font-family:"Yu Mincho","YuMincho","Hiragino Mincho ProN",serif;font-weigh
 .hero-badge b{color:var(--primary);font-size:1.45rem}
 
 /* trust bar */
-.trust-bar{background:var(--primary);color:#fff}
+.trust-bar{background:var(--grad);color:#fff}
 .trust-grid{display:grid;grid-template-columns:repeat(4,1fr)}
 .trust-grid div{padding:22px 18px;text-align:center;border-right:1px solid rgba(255,255,255,.18);font-weight:800;font-size:.96rem}
 .trust-grid div:last-child{border-right:0}
@@ -93,7 +93,7 @@ h1,h2{font-family:"Yu Mincho","YuMincho","Hiragino Mincho ProN",serif;font-weigh
 .worry-list{list-style:none;padding:0;margin:0;display:grid;gap:14px}
 .worry-list li{display:flex;gap:12px;align-items:flex-start;font-weight:700;font-size:1.02rem}
 .worry-list li::before{content:"!";flex:0 0 auto;display:grid;place-items:center;margin-top:2px;width:24px;height:24px;border-radius:50%;background:var(--primary-soft);color:var(--primary);font-weight:900;font-size:.85rem}
-.banner{max-width:780px;margin:26px auto 0;text-align:center;background:linear-gradient(135deg,var(--primary),var(--navy));color:#fff;border-radius:var(--radius);padding:26px 24px}
+.banner{max-width:780px;margin:26px auto 0;text-align:center;background:var(--grad);color:#fff;border-radius:var(--radius);padding:26px 24px}
 .banner strong{display:block;font-size:clamp(1.3rem,3vw,1.9rem);margin-bottom:6px}
 .banner span{font-size:.92rem;opacity:.92}
 
@@ -167,7 +167,7 @@ h1,h2{font-family:"Yu Mincho","YuMincho","Hiragino Mincho ProN",serif;font-weigh
 /* steps */
 .steps{display:grid;grid-template-columns:repeat(5,1fr);gap:16px;padding:0;list-style:none}
 .steps li{position:relative;background:#fff;border:1px solid var(--line);border-radius:14px;padding:26px 18px 20px;text-align:center;box-shadow:var(--shadow)}
-.steps li span{display:grid;place-items:center;width:44px;height:44px;margin:0 auto 12px;border-radius:50%;background:linear-gradient(135deg,var(--primary),var(--navy));color:#fff;font-weight:800}
+.steps li span{display:grid;place-items:center;width:44px;height:44px;margin:0 auto 12px;border-radius:50%;background:var(--grad);color:#fff;font-weight:800}
 .steps li h3{font-size:1.02rem;margin-bottom:6px}
 .steps li p{color:var(--muted);font-size:.86rem;margin:0}
 
@@ -180,7 +180,7 @@ summary::before{content:"Q";display:inline-grid;place-items:center;width:24px;he
 details p{margin:14px 0 0 34px;color:var(--muted)}
 
 /* final cta */
-.final-cta{background:linear-gradient(135deg,var(--primary),var(--navy));color:#fff;text-align:center}
+.final-cta{background:var(--grad);color:#fff;text-align:center}
 .final-cta .eyebrow{color:#fff;justify-content:center}
 .final-cta .eyebrow::before{background:#fff}
 .final-cta h2{font-size:clamp(1.7rem,4vw,2.6rem);margin-bottom:14px;color:#fff}
@@ -191,10 +191,10 @@ details p{margin:14px 0 0 34px;color:var(--muted)}
 .final-cta-links a{border-bottom:1px solid rgba(255,255,255,.6);padding-bottom:2px}
 
 /* footer */
-.site-footer{background:var(--navy-2);color:rgba(255,255,255,.82);padding:36px 0}
+.site-footer{background:#383838;color:rgba(255,255,255,.82);padding:40px 0}
 .footer-inner{display:flex;flex-wrap:wrap;justify-content:space-between;gap:18px;align-items:center}
 .site-footer .brand{color:#fff}
-.site-footer .brand-mark{background:#fff;color:var(--primary)}
+.site-footer .brand-mark{background:var(--grad);color:#fff}
 .legal-links{display:flex;flex-wrap:wrap;gap:18px;font-size:.78rem;font-weight:700}
 .legal-links a{text-decoration:underline;text-underline-offset:4px}
 .site-footer small{display:block;width:100%;margin-top:6px;color:rgba(255,255,255,.55);font-size:.72rem}
@@ -205,7 +205,7 @@ details p{margin:14px 0 0 34px;color:var(--muted)}
 
 /* legal pages */
 .legal-page{background:var(--surface)}
-.legal-header{padding:46px 0 28px;background:linear-gradient(135deg,var(--primary),var(--navy));color:#fff}
+.legal-header{padding:46px 0 28px;background:var(--grad);color:#fff}
 .legal-header h1{margin:8px 0 6px;font-size:clamp(1.7rem,4vw,2.6rem)}
 .legal-header p{margin:0;opacity:.85}
 .legal-content{padding:50px 0 80px}
@@ -293,13 +293,13 @@ details p{margin:14px 0 0 34px;color:var(--muted)}
       <div class="container header-inner">
         <a class="brand" href="/" aria-label="あるご ホーム"><span class="brand-mark">あ</span><span>あるご</span></a>
         <nav class="desktop-nav" aria-label="メインナビゲーション">
-          <a href="#points">選ばれる理由</a><a href="#features">サービス</a><a href="#price">料金</a><a href="#voices">お客様の声</a><a href="#access">アクセス</a><a href="#faq">FAQ</a>
+          <a href="#points">選ばれる理由</a><a href="#features">サービス</a><a href="#price">料金</a><a href="#access">アクセス</a><a href="#faq">FAQ</a>
           <a class="button button-small" href="#contact">お問い合わせ</a>
         </nav>
         <button class="menu-button" type="button" aria-expanded="false" aria-controls="mobile-nav" aria-label="メニューを開く">メニュー</button>
       </div>
       <nav id="mobile-nav" class="mobile-nav" aria-label="モバイルナビゲーション" hidden>
-        <a href="#points">選ばれる理由</a><a href="#features">サービス</a><a href="#price">料金</a><a href="#voices">お客様の声</a><a href="#access">アクセス</a><a href="#faq">FAQ</a><a href="#contact">お問い合わせ</a>
+        <a href="#points">選ばれる理由</a><a href="#features">サービス</a><a href="#price">料金</a><a href="#access">アクセス</a><a href="#faq">FAQ</a><a href="#contact">お問い合わせ</a>
       </nav>
     </header>
     <main id="main">
@@ -461,17 +461,6 @@ details p{margin:14px 0 0 34px;color:var(--muted)}
             <figure class="gallery-item reveal"><img src="../starter/public/images/14.png" alt="スタッフによる作業" loading="lazy" /><figcaption>スタッフによる作業</figcaption></figure>
           </div>
           <p class="note">※写真はイメージです。公開前に実際の作業写真へ差し替えてください。</p>
-        </div>
-      </section>
-
-      <section id="voices" class="section" data-section="voices">
-        <div class="container">
-          <div class="section-heading reveal"><span class="eyebrow">VOICE</span><h2>お客様の<em>声</em></h2><p>※掲載内容はサンプルです。公開前に、ご了承いただいた実際のお客様の声へ差し替えてください。</p></div>
-          <div class="voice-grid">
-            <article class="voice-card reveal"><div class="stars">★★★★★</div><p>「何から手をつければいいか分からない状態でしたが、仕分けから買取まで丁寧に対応していただき、費用も思ったより抑えられました。」</p><div class="who">【サンプル】60代女性・遺品整理</div></article>
-            <article class="voice-card reveal"><div class="stars">★★★★★</div><p>「遠方に住んでいて立ち会いが難しかったのですが、写真で相談しながら進めてもらえて助かりました。」</p><div class="who">【サンプル】50代男性・不用品回収</div></article>
-            <article class="voice-card reveal"><div class="stars">★★★★★</div><p>「引っ越しと不要な家具の処分を一度にお願いでき、当日もスムーズでした。買取分が差し引かれてお得でした。」</p><div class="who">【サンプル】30代女性・引っ越し</div></article>
-          </div>
         </div>
       </section>
 
