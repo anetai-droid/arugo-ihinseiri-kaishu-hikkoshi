@@ -4,10 +4,7 @@
 
 ## プレビュー
 
-- [あるご-プレビュー.html](./あるご-プレビュー.html)
-- GitHub Pages: <https://anetai-droid.github.io/arugo-ihinseiri-kaishu-hikkoshi/%E3%81%82%E3%82%8B%E3%81%94-%E3%83%97%E3%83%AC%E3%83%93%E3%83%A5%E3%83%BC.html>
-
-ローカルで確認する場合は、`あるご-プレビュー.html` をブラウザで開いてください。
+- [お客様確認用プレビューを開く](https://anetai-droid.github.io/arugo-ihinseiri-kaishu-hikkoshi/%E3%81%82%E3%82%8B%E3%81%94-%E3%83%97%E3%83%AC%E3%83%93%E3%83%A5%E3%83%BC.html)
 
 ## 主なファイル
 
