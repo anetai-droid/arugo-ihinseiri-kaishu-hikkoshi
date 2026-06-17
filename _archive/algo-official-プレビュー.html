@@ -1,0 +1,356 @@
+﻿<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="あるご合同会社の遺品整理・不用品買取・回収サービス。料金表、作業の流れ、よくある質問、ブログ情報まで分かりやすくご案内します。" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="あるご合同会社 | 遺品整理・不用品買取" />
+    <meta property="og:description" content="遺品整理から不用品の買取・回収、室内清掃まで。関東対応、出張見積もり無料。" />
+    <title>あるご合同会社 | 遺品整理・不用品買取</title>
+    <link rel="icon" href="preview_assets/algo-official/favicon.svg" type="image/svg+xml" />
+    <style>
+:root{
+  --primary:#0f88c9; --primary-dark:#075f99; --primary-soft:#d9eefb;
+  --accent:#18a7d8; --ink:#162231; --muted:#617386;
+  --surface:#f6fbff; --surface-2:#e8f4fc; --line:#d7e8f4; --white:#fff;
+  --dark:#10283f; --radius:18px; --shadow:0 20px 48px rgba(10,92,150,.12);
+  --container:1140px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;color:var(--ink);background:var(--surface);font-family:"Noto Sans JP","Hiragino Kaku Gothic ProN","Yu Gothic",sans-serif;line-height:1.85;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+h1,h2,h3,p{margin-top:0}
+h1,h2,h3,.brand{line-height:1.4;font-weight:800}
+.container{width:min(calc(100% - 40px),var(--container));margin-inline:auto}
+.narrow{max-width:860px}
+.skip-link{position:fixed;left:1rem;top:-4rem;z-index:100;background:#fff;padding:.7rem 1rem;border-radius:8px}
+.skip-link:focus{top:1rem}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.eyebrow{display:inline-block;margin-bottom:14px;padding:5px 16px;border-radius:999px;background:var(--surface-2);color:var(--primary-dark);font-size:.74rem;font-weight:800;letter-spacing:.16em}
+.section{padding:92px 0}
+.section-cream{background:var(--surface)}
+.section-white{background:var(--white)}
+.section-heading{max-width:760px;margin:0 auto 56px;text-align:center}
+.section-heading h2{font-size:clamp(1.8rem,4vw,2.7rem);letter-spacing:.01em;margin-bottom:14px}
+.section-heading h2 em{color:var(--primary-dark);font-style:normal}
+.section-heading>p:last-child{color:var(--muted);margin-bottom:0}
+.site-header{position:sticky;top:0;z-index:30;background:rgba(248,241,231,.94);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.header-inner{min-height:72px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.brand{display:inline-flex;align-items:center;gap:10px;font-size:1.15rem;letter-spacing:.04em;color:var(--ink)}
+.brand-mark{display:grid;width:40px;height:40px;place-items:center;border-radius:12px;color:#fff;background:linear-gradient(135deg,#0f88c9,#075f99);font-weight:800}
+.desktop-nav{display:flex;align-items:center;gap:24px;font-size:.9rem;font-weight:700}
+.desktop-nav a:not(.button):hover{color:var(--primary-dark)}
+.menu-button,.mobile-nav{display:none}
+.mobile-nav{padding:10px 20px 18px;background:#fff;border-bottom:1px solid var(--line)}
+.mobile-nav a{display:block;padding:12px 0;border-bottom:1px solid var(--line);font-weight:700}
+.button{display:inline-flex;min-height:52px;align-items:center;justify-content:center;gap:8px;padding:12px 28px;border-radius:999px;background:linear-gradient(135deg,#0f88c9,#075f99);color:#fff;font-weight:800;border:0;box-shadow:0 12px 24px rgba(12,132,195,.24);transition:.2s}
+.button:hover{transform:translateY(-2px);box-shadow:0 16px 30px rgba(12,132,195,.32)}
+.button-secondary{background:#fff;color:var(--primary-dark);border:1.5px solid var(--primary-soft);box-shadow:none}
+.button-small{min-height:44px;padding:9px 20px;font-size:.9rem}
+.button-light{background:#fff;color:var(--primary-dark);box-shadow:0 12px 26px rgba(10,92,150,.18)}
+.hero{position:relative;min-height:620px;overflow:hidden;color:#fff;background:#f6fbff}
+.hero-photo{position:absolute;inset:0;z-index:0;background:var(--hero-image, url("preview_assets/algo-official/images/17.png")) center/cover no-repeat;transform:none;filter:saturate(1.04) brightness(1.06)}
+.hero-overlay{display:none}
+.hero-grid{position:relative;z-index:2;width:calc(100% - 96px);max-width:none;min-height:620px;display:flex;align-items:flex-end;justify-content:space-between;gap:40px;padding:120px 0 48px}
+.hero-copy{max-width:560px;padding:0;background:transparent;backdrop-filter:none;border-left:0}
+.hero-copy h1{font-size:clamp(2.05rem,4vw,3.25rem);letter-spacing:.01em;margin-bottom:20px;color:#fff;text-shadow:0 2px 14px rgba(0,0,0,.52)}
+.hero-copy h1 em{color:#dff4ff;font-style:normal}
+.hero .eyebrow{background:rgba(12,132,195,.86);color:#fff}
+.hero-lead{font-size:1.06rem;color:#fff;max-width:34em;margin-bottom:28px;padding:0;background:transparent;text-shadow:0 1px 9px rgba(0,0,0,.55)}
+.hero-cta{display:flex;flex-wrap:wrap;gap:14px;align-items:center}
+.hero .button-secondary{background:#fff;color:var(--primary-dark);border:1.5px solid var(--primary-soft);backdrop-filter:none}
+.hero-points{display:flex;flex-wrap:wrap;gap:8px 18px;padding:0;margin:26px 0 0;list-style:none;font-size:.86rem;font-weight:700;color:#fff;text-shadow:0 1px 8px rgba(0,0,0,.58)}
+.hero-points li::before{content:"✓";margin-right:7px;color:var(--primary-soft);font-weight:900}
+.hero-badge{flex:0 0 auto;align-self:flex-end;display:flex;flex-direction:column;min-width:230px;padding:16px 22px;border-left:4px solid var(--primary);border-radius:14px;background:rgba(255,255,255,.96);color:var(--ink);box-shadow:0 18px 45px rgba(0,0,0,.28)}
+.hero-badge small{color:var(--muted);font-size:.72rem;font-weight:700}
+.hero-badge b{color:var(--primary-dark);font-size:1.4rem}
+.notice{max-width:860px;margin:0 auto 26px;padding:16px 20px;border:2px solid var(--accent);border-radius:14px;background:#e8f4fc;color:#075f99;font-weight:700}
+.worry-box{max-width:760px;margin:0 auto;background:var(--surface);border:2px dashed var(--primary-soft);border-radius:var(--radius);padding:clamp(26px,4vw,42px)}
+.worry-list{list-style:none;padding:0;margin:0;display:grid;gap:14px}
+.worry-list li{display:flex;gap:12px;align-items:flex-start;font-weight:700;font-size:1.02rem}
+.worry-list li::before{content:"";flex:0 0 auto;margin-top:5px;width:18px;height:18px;border-radius:50%;background:var(--primary-soft);box-shadow:0 0 0 4px rgba(217,238,251,.45)}
+.banner{max-width:760px;margin:28px auto 0;text-align:center;background:linear-gradient(135deg,#0f88c9,#075f99);color:#fff;border-radius:var(--radius);padding:26px 24px}
+.banner strong{display:block;font-size:clamp(1.3rem,3vw,1.9rem);margin-bottom:6px}
+.banner span{font-size:.92rem;opacity:.92}
+.points-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;max-width:1000px;margin:0 auto}
+.point-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:34px 26px 30px;text-align:center;box-shadow:var(--shadow)}
+.point-img{width:148px;height:148px;border-radius:50%;object-fit:cover;margin:0 auto 18px;border:5px solid var(--surface-2)}
+.point-label{display:block;color:var(--primary);font-weight:800;font-size:.82rem;letter-spacing:.14em;margin-bottom:8px}
+.point-card h3{font-size:1.22rem;margin-bottom:10px}
+.point-card p{color:var(--muted);font-size:.94rem;margin:0}
+.feature-row{display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:clamp(36px,6vw,72px);margin-top:60px}
+.feature-row:first-of-type{margin-top:0}
+.feature-row.reverse figure{order:2}
+.media-frame{margin:0;overflow:hidden;border-radius:var(--radius);box-shadow:var(--shadow);background:var(--surface-2)}
+.media-frame img{width:100%;height:100%;object-fit:cover;aspect-ratio:3/2}
+.feature-label{display:inline-block;margin-bottom:12px;color:var(--primary);font-weight:800;font-size:.82rem;letter-spacing:.12em}
+.feature-row h3{font-size:clamp(1.5rem,3vw,2.1rem);margin-bottom:12px}
+.feature-row p{color:var(--muted)}
+.check-list{padding:0;margin:20px 0 0;list-style:none;font-weight:700}
+.check-list li{padding:9px 0;border-bottom:1px solid var(--line)}
+.check-list li::before{content:"✓";margin-right:9px;color:var(--accent);font-weight:900}
+.price-wrap{max-width:840px;margin:0 auto;overflow-x:auto}
+.price-table{width:100%;border-collapse:collapse;background:#fff;border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow)}
+.price-table th,.price-table td{padding:14px 16px;border-bottom:1px solid var(--line);text-align:left;font-size:.98rem;white-space:nowrap}
+.price-table thead th{background:var(--primary);color:#fff;font-weight:800}
+.price-table tbody tr:nth-child(even){background:var(--surface)}
+.price-table td:nth-child(2){font-weight:800;color:var(--primary-dark)}
+.price-table tbody tr:last-child td{border-bottom:0}
+.price-note{margin-top:14px;font-size:.85rem;color:var(--muted)}
+.gallery-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.gallery-item{margin:0;overflow:hidden;border-radius:var(--radius);background:#fff;border:1px solid var(--line);box-shadow:var(--shadow)}
+.gallery-item img{width:100%;aspect-ratio:3/2;object-fit:cover}
+.gallery-item figcaption{padding:14px 16px;color:var(--ink);font-size:.9rem;font-weight:700;text-align:center}
+.note{margin-top:26px;text-align:center;color:var(--muted);font-size:.76rem}
+.steps{display:grid;grid-template-columns:repeat(5,1fr);gap:16px;padding:0;list-style:none;counter-reset:step}
+.steps li{position:relative;background:#fff;border:1px solid var(--line);border-radius:18px;padding:28px 18px 22px;text-align:center}
+.steps li span{display:grid;place-items:center;width:42px;height:42px;margin:0 auto 12px;border-radius:50%;background:var(--primary);color:#fff;font-weight:800}
+.steps li h3{font-size:1.02rem;margin-bottom:6px}
+.steps li p{color:var(--muted);font-size:.86rem;margin:0}
+.faq-list{display:grid;gap:14px}
+details{background:#fff;border:1px solid var(--line);border-radius:16px;padding:20px 24px}
+summary{cursor:pointer;font-weight:800;list-style:none}
+summary::-webkit-details-marker{display:none}
+summary::before{content:"Q ";color:var(--primary);font-weight:900}
+details p{margin:14px 0 0;color:var(--muted)}
+.final-cta{background:linear-gradient(135deg,#0f88c9,#075f99);color:#fff;text-align:center}
+.final-cta .eyebrow{background:rgba(255,255,255,.2);color:#fff}
+.final-cta h2{font-size:clamp(1.7rem,4vw,2.6rem);margin-bottom:14px;color:#fff}
+.final-cta-lead{max-width:640px;margin:0 auto 22px;opacity:.94}
+.final-cta-tel{font-size:1.7rem;font-weight:800;margin:6px 0 18px}
+.final-cta-links{display:flex;justify-content:center;gap:28px;margin-top:18px;font-size:.85rem;font-weight:700}
+.final-cta-links a{border-bottom:1px solid rgba(255,255,255,.6);padding-bottom:2px}
+.site-footer{background:var(--dark);color:rgba(255,255,255,.82);padding:36px 0}
+.footer-inner{display:flex;flex-wrap:wrap;justify-content:space-between;gap:18px;align-items:center}
+.site-footer .brand{color:#fff}
+.site-footer .brand-mark{background:#fff;color:var(--primary-dark)}
+.legal-links{display:flex;flex-wrap:wrap;gap:18px;font-size:.78rem;font-weight:700}
+.legal-links a{text-decoration:underline;text-underline-offset:4px}
+.site-footer small{display:block;width:100%;margin-top:6px;color:rgba(255,255,255,.55);font-size:.72rem}
+.floating-cta{display:none}
+.reveal{opacity:0;transform:translateY(20px);transition:opacity .6s ease,transform .6s ease}
+.reveal.is-visible{opacity:1;transform:none}
+.legal-page{background:var(--surface);min-height:100vh}
+.legal-header{padding:46px 0 28px;background:linear-gradient(135deg,#0f88c9,#075f99);color:#fff}
+.legal-header h1{margin:8px 0 6px;font-size:clamp(1.7rem,4vw,2.6rem)}
+.legal-header p{margin:0;opacity:.85}
+.legal-content{padding:50px 0 80px}
+.legal-content article{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:clamp(24px,5vw,52px);box-shadow:var(--shadow)}
+.legal-content h2{margin:34px 0 10px;font-size:1.25rem}
+.legal-content h2:first-child{margin-top:0}
+.legal-content p,.legal-content li{color:var(--muted)}
+.legal-content table{width:100%;border-collapse:collapse;font-size:.92rem}
+.legal-content th,.legal-content td{padding:13px;border:1px solid var(--line);text-align:left;vertical-align:top}
+.legal-content th{width:30%;background:var(--surface)}
+.template-warning{margin-bottom:26px;padding:16px 20px;border:2px solid var(--accent);border-radius:14px;background:#e8f4fc;color:#075f99;font-weight:700}
+.legal-footer{padding:24px 0;background:var(--dark);color:#fff}
+.legal-footer .container{display:flex;flex-wrap:wrap;gap:18px;justify-content:space-between}
+.legal-footer a{text-decoration:underline;text-underline-offset:4px}
+@media(max-width:880px){
+  .desktop-nav{display:none}
+  .menu-button{display:inline-flex;padding:9px 14px;border:1px solid var(--line);border-radius:10px;background:#fff;font-weight:800}
+  .mobile-nav:not([hidden]){display:block}
+  .hero{min-height:560px}
+  .hero-grid{min-height:560px;padding:100px 0 36px}
+  .hero-photo{background-position:60% center}
+  .hero-badge{display:none}
+  .feature-row,.feature-row.reverse{grid-template-columns:1fr}
+  .feature-row.reverse figure{order:initial}
+  .points-grid{grid-template-columns:1fr;max-width:420px}
+  .gallery-grid{grid-template-columns:1fr 1fr}
+  .steps{grid-template-columns:1fr 1fr}
+  .floating-cta{position:fixed;right:14px;bottom:14px;z-index:40;display:inline-flex;padding:13px 22px;border-radius:999px;background:linear-gradient(135deg,#0f88c9,#075f99);color:#fff;font-weight:800;box-shadow:var(--shadow)}
+}
+@media(max-width:520px){
+  .section{padding:64px 0}
+  .gallery-grid,.steps{grid-template-columns:1fr}
+  .hero-cta{gap:12px}
+  .final-cta-links{flex-direction:column;gap:10px}
+}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{transition:none!important;scroll-behavior:auto!important}.reveal{opacity:1;transform:none}}
+
+
+
+/* corporate sections after hero */
+.corp-section{position:relative;padding:96px 0;background:#fff;overflow:hidden}
+.corp-section.alt{background:#f4f8fb}
+.corp-kicker{display:inline-flex;align-items:center;gap:10px;margin-bottom:16px;color:#d71920;font-size:.78rem;font-weight:900;letter-spacing:.12em}
+.corp-kicker::before{content:"";display:block;width:34px;height:2px;background:#d71920}
+.corp-title{margin:0 0 18px;color:#111827;font-size:clamp(2.1rem,4vw,3.6rem);line-height:1.05;font-family:Arial,"Noto Sans JP",sans-serif;font-weight:900;letter-spacing:0}
+.corp-title span{color:#d71920}
+.corp-copy{max-width:38em;color:#4d5b68;font-size:.98rem;line-height:2}
+.corp-button{display:inline-flex;align-items:center;justify-content:center;min-width:180px;min-height:42px;margin-top:24px;padding:10px 28px;background:#d71920;color:#fff;border-radius:0;font-size:.78rem;font-weight:900;letter-spacing:.08em;box-shadow:none}
+.corp-button:hover{transform:translateY(-1px);background:#b8141a}
+.message-layout{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(320px,.9fr);align-items:center;gap:70px}
+.message-photo{margin:0;min-height:310px;clip-path:polygon(0 0,92% 0,100% 100%,0 100%);overflow:hidden;background:#dfeef7}
+.message-photo img{width:100%;height:100%;min-height:310px;object-fit:cover}
+.message-panel{position:relative;padding-left:34px}
+.message-panel::before{content:"";position:absolute;left:0;top:8px;width:2px;height:150px;background:#d71920}
+.business-section{background:#f3f7fa;background-image:linear-gradient(115deg,rgba(255,255,255,.55),rgba(255,255,255,0));}
+.business-head{text-align:center;margin-bottom:42px}
+.business-head .corp-kicker{justify-content:center}
+.business-head .corp-kicker::after{content:"";display:block;width:34px;height:2px;background:#d71920}
+.business-head .corp-kicker::before{display:none}
+.business-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px}
+.business-card{position:relative;min-height:390px;overflow:hidden;background:#111827;color:#fff}
+.business-card img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:saturate(.95) brightness(.82);transition:transform .35s ease}
+.business-card:hover img{transform:scale(1.035)}
+.business-card::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(7,18,30,.06),rgba(7,18,30,.82))}
+.business-card-body{position:absolute;inset:auto 0 0 0;z-index:1;padding:28px}
+.business-no{position:absolute;left:24px;top:20px;z-index:1;color:#fff;font-family:Arial,sans-serif;font-size:3.2rem;font-weight:900;line-height:1;opacity:.92}
+.business-card h3{margin:0 0 12px;font-size:1.35rem;color:#fff}
+.business-card p{margin:0;color:rgba(255,255,255,.86);font-size:.9rem;line-height:1.8}
+.price-band{background:#fff}
+.price-layout{display:grid;grid-template-columns:320px minmax(0,1fr);gap:60px;align-items:start}
+.price-wrap{max-width:none}
+.price-table{border-radius:0;box-shadow:none;border-top:3px solid #d71920}
+.price-table thead th{background:#111827;color:#fff}
+.price-table td:nth-child(2){color:#d71920}
+.gallery-wide{display:grid;grid-template-columns:minmax(0,1fr) minmax(320px,.72fr);gap:48px;align-items:center}
+.gallery-collage{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.gallery-collage figure{margin:0;overflow:hidden;background:#e8f4fc}
+.gallery-collage figure:first-child{grid-row:span 2;clip-path:polygon(0 0,100% 0,86% 100%,0 100%)}
+.gallery-collage img{width:100%;height:100%;min-height:190px;object-fit:cover}
+.gallery-collage figure:first-child img{min-height:396px}
+.faq-corp{max-width:960px;margin:0 auto}
+.faq-corp details{border:0;border-bottom:1px solid #dce6ee;border-radius:0;background:transparent;padding:24px 0}
+.faq-corp summary{font-size:1.06rem}
+.faq-corp summary::before{color:#d71920}
+.final-cta{background:#0f2538}
+.final-cta .button-light{color:#d71920}
+@media(max-width:900px){
+  .message-layout,.price-layout,.gallery-wide{grid-template-columns:1fr;gap:34px}
+  .business-grid{grid-template-columns:1fr}
+  .business-card{min-height:320px}
+  .message-photo{clip-path:none}
+}
+
+</style>
+<script>
+function init(){const e=document.querySelector(".menu-button"),t=document.querySelector("#mobile-nav");e?.addEventListener("click",()=>{const n=e.getAttribute("aria-expanded")==="true";e.setAttribute("aria-expanded",String(!n)),e.setAttribute("aria-label",n?"メニューを開く":"メニューを閉じる"),t&&(t.hidden=n)}),t?.querySelectorAll("a").forEach(n=>{n.addEventListener("click",()=>{e&&(e.setAttribute("aria-expanded","false"),e.setAttribute("aria-label","メニューを開く"),t.hidden=!0)})}),document.addEventListener("keydown",n=>{n.key==="Escape"&&t&&!t.hidden&&e&&(e.setAttribute("aria-expanded","false"),e.setAttribute("aria-label","メニューを開く"),t.hidden=!0,e.focus())});if(!("IntersectionObserver"in window)){document.querySelectorAll(".reveal").forEach(n=>n.classList.add("is-visible"));return}const o=new IntersectionObserver(n=>n.forEach(r=>r.isIntersecting&&r.target.classList.add("is-visible")),{threshold:.12});document.querySelectorAll(".reveal").forEach(n=>o.observe(n))}document.readyState==="loading"?document.addEventListener("DOMContentLoaded",init):init();
+</script>
+  </head>
+  <body data-preview="algo-official" class="site-algo">
+    <a class="skip-link" href="#main">本文へスキップ</a>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="./algo-official-プレビュー.html" aria-label="あるご合同会社 ホーム"><span class="brand-mark">あ</span><span>あるご合同会社</span></a>
+        <nav class="desktop-nav" aria-label="メインナビゲーション">
+          <a href="#services">サービス</a><a href="#price">料金</a><a href="#gallery">ギャラリー</a><a href="#faq">FAQ</a><a href="#blog">ブログ</a><a class="button button-small" href="#contact">無料見積もり</a>
+        </nav>
+        <button class="menu-button" type="button" aria-expanded="false" aria-controls="mobile-nav" aria-label="メニューを開く">メニュー</button>
+      </div>
+      <nav id="mobile-nav" class="mobile-nav" aria-label="モバイルナビゲーション" hidden>
+        <a href="#services">サービス</a><a href="#price">料金</a><a href="#gallery">ギャラリー</a><a href="#faq">FAQ</a><a href="#blog">ブログ</a><a href="#contact">無料見積もり</a>
+      </nav>
+    </header>
+    <main id="main">
+      <section class="hero" style="--hero-image:url('preview_assets/algo-official/images/17.png')" data-section="hero">
+        <div class="hero-photo" role="img" aria-label="遺品整理・不用品回収の作業イメージ"></div><div class="hero-overlay" aria-hidden="true"></div>
+        <div class="container hero-grid">
+          <div class="hero-copy reveal">
+            <span class="eyebrow">遺品整理・不用品買取</span>
+            <h1>遺品整理も、不用品買取も。<br /><em>想いに寄り添い</em>丁寧に整えます。</h1>
+            <p class="hero-lead">あるご合同会社の本体サイトとして、遺品整理・不用品買取・回収・室内清掃の情報を整理。料金、FAQ、ブログ、WEB予約へ迷わず進める構成です。</p>
+            <div class="hero-cta"><a class="button" href="#contact">無料見積もりを相談する</a><a class="button button-secondary" href="#price">料金を見る</a></div>
+            <ul class="hero-points"><li>関東対応</li><li>出張見積もり無料</li><li>WEB予約導線あり</li></ul>
+          </div>
+          <div class="hero-badge reveal"><small>電話受付 9:30〜20:00</small><b>090-2449-3321</b></div>
+        </div>
+      </section>
+      
+      <section id="services" class="corp-section">
+        <div class="container message-layout">
+          <figure class="message-photo reveal"><img src="preview_assets/algo-official/images/14.png" alt="遺品整理の作業" loading="lazy" /></figure>
+          <div class="message-panel reveal">
+            <span class="corp-kicker">MESSAGE</span>
+            <h2 class="corp-title">整理は、<br /><span>次へ進む準備。</span></h2>
+            <p class="corp-copy">遺品整理から不用品の買取・回収まで、状況に合わせてまとめてご相談いただけます。大切な品を一つずつ確認しながら、残すもの、手放すもの、活かせるものを丁寧に整えます。</p>
+            <a class="corp-button" href="#contact">VIEW MORE</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="corp-section business-section">
+        <div class="container">
+          <div class="business-head reveal">
+            <span class="corp-kicker">BUSINESS</span>
+            <h2 class="corp-title">SERVICE</h2>
+          </div>
+          <div class="business-grid">
+            <article class="business-card reveal">
+              <img src="preview_assets/algo-official/images/14.png" alt="遺品整理の作業" loading="lazy" />
+              <span class="business-no">01</span>
+              <div class="business-card-body"><h3>遺品整理</h3><p>故人様の大切な品々をご遺族様の想いに寄り添いながら仕分け・整理します。</p></div>
+            </article>
+            <article class="business-card reveal">
+              <img src="preview_assets/algo-official/images/11.png" alt="不用品買取・回収" loading="lazy" />
+              <span class="business-no">02</span>
+              <div class="business-card-body"><h3>不用品買取・回収</h3><p>家具・家電を中心に査定し、買取と回収を組み合わせて処分費用を抑えます。</p></div>
+            </article>
+            <article class="business-card reveal">
+              <img src="preview_assets/algo-official/images/8.png" alt="仕分け作業" loading="lazy" />
+              <span class="business-no">03</span>
+              <div class="business-card-body"><h3>室内清掃・整理</h3><p>整理後のお部屋をすっきり整え、引き渡しや次の利用に向けてサポートします。</p></div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="price" class="corp-section price-band">
+        <div class="container price-layout">
+          <div class="reveal">
+            <span class="corp-kicker">PRICE</span>
+            <h2 class="corp-title">料金の<br /><span>目安</span></h2>
+            <p class="corp-copy">正式な金額は、お部屋の状況や物量、搬出条件を確認したうえでお見積もりします。</p>
+          </div>
+          <div class="price-wrap reveal"><table class="price-table"><thead><tr><th>間取り</th><th>料金の目安</th><th>作業人数</th><th>作業時間</th></tr></thead><tbody><tr><td>1R・1K</td><td>50,000円〜</td><td>1名〜</td><td>2時間〜</td></tr><tr><td>1DK</td><td>80,000円〜</td><td>2名〜</td><td>3時間〜</td></tr><tr><td>1LDK</td><td>100,000円〜</td><td>3名〜</td><td>5時間〜</td></tr><tr><td>2DK</td><td>150,000円〜</td><td>3名〜</td><td>6時間〜</td></tr><tr><td>2LDK</td><td>200,000円〜</td><td>4名〜</td><td>6時間〜</td></tr><tr><td>3DK</td><td>300,000円〜</td><td>4名〜</td><td>8時間〜</td></tr><tr><td>3LDK</td><td>300,000円〜</td><td>4名〜</td><td>2日〜</td></tr><tr><td>4LDK以上</td><td>500,000円〜</td><td>5名以上</td><td>5日〜</td></tr></tbody></table><p class="price-note">作業費・車両費・回収運搬費・廃棄物処分費を含む目安です。搬出条件や特殊清掃の有無で変動します。</p></div>
+        </div>
+      </section>
+
+      <section id="gallery" class="corp-section alt">
+        <div class="container gallery-wide">
+          <div class="gallery-collage reveal">
+            <figure><img src="preview_assets/algo-official/images/8.png" alt="仕分け作業" loading="lazy" /></figure>
+            <figure><img src="preview_assets/algo-official/images/11.png" alt="家電回収" loading="lazy" /></figure>
+            <figure><img src="preview_assets/algo-official/images/13.png" alt="書籍整理" loading="lazy" /></figure>
+          </div>
+          <div class="reveal">
+            <span class="corp-kicker">ABOUT US</span>
+            <h2 class="corp-title">作業の<br /><span>品質</span></h2>
+            <p class="corp-copy">家具・家電の買取から、仕分け・回収・清掃まで。お客様の状況に合わせて、必要な作業を過不足なく組み立てます。</p>
+            <a class="corp-button" href="#contact">CONTACT</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="faq" class="corp-section">
+        <div class="container faq-corp">
+          <div class="business-head reveal"><span class="corp-kicker">FAQ</span><h2 class="corp-title">Q&A</h2></div>
+          <div class="faq-list reveal"><details><summary>重い家具や家電が多くても大丈夫ですか？</summary><p>人員を手配して対応します。階段の有無や搬出距離で追加料金が出る場合は、見積もり時に説明します。</p></details><details><summary>料金はどのように決まりますか？</summary><p>人件費、車両費、回収運搬費、廃棄物処分費、搬出条件を踏まえて算出します。</p></details><details><summary>買取できるものはありますか？</summary><p>家具・家電などを中心に査定します。状態や年式により買取可否が変わります。</p></details></div>
+        </div>
+      </section>
+
+      <section id="blog" class="corp-section alt">
+        <div class="container message-layout">
+          <div class="message-panel reveal">
+            <span class="corp-kicker">BLOG</span>
+            <h2 class="corp-title">お役立ち情報・<br /><span>ブログ</span></h2>
+            <p class="corp-copy">片付けや整理で迷いやすいポイントを、ブログで分かりやすく紹介します。遺品整理・生前整理・不用品回収の基礎知識を更新していきます。</p>
+            <a class="corp-button" href="#contact">CONTACT</a>
+          </div>
+          <figure class="message-photo reveal"><img src="preview_assets/algo-official/images/17.png" alt="相談のイメージ" loading="lazy" /></figure>
+        </div>
+      </section>
+
+      <section id="contact" class="section final-cta"><div class="container reveal"><span class="eyebrow">CONTACT</span><h2>まずは無料見積もりから。</h2><p class="final-cta-lead">ご都合に合わせて、電話またはWEB予約からご相談いただけます。</p><div class="final-cta-tel">090-2449-3321</div><a class="button button-light" href="tel:09024493321">電話で相談する</a><div class="final-cta-links"><a href="#price">料金を見る</a><a href="algo-official-法定表記.html">事業者情報</a></div></div></section>
+    </main>
+    <footer class="site-footer"><div class="container footer-inner"><a class="brand" href="./algo-official-プレビュー.html"><span class="brand-mark">あ</span><span>あるご合同会社</span></a><nav class="legal-links" aria-label="法務情報"><a href="algo-official-プライバシー.html">プライバシーポリシー</a><a href="algo-official-法定表記.html">事業者情報</a></nav><small>© 2026 あるご合同会社 / TEL 090-2449-3321 / 関東対応</small></div></footer>
+    <a class="floating-cta" href="#contact">無料見積もり</a>
+  </body>
+</html>
+
+

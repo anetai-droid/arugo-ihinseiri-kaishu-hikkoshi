@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /
+
+# 公開承認後、Disallowを解除し、必要に応じてSitemapを追加してください。
