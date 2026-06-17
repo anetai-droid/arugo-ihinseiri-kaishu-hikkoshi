@@ -1,3 +1,4 @@
+import './style.css';
 function init(){
   const mb=document.querySelector('.menu-button'),mn=document.querySelector('#mobile-nav');
   mb&&mb.addEventListener('click',()=>{const o=mb.getAttribute('aria-expanded')==='true';mb.setAttribute('aria-expanded',String(!o));mn.hidden=o;});
