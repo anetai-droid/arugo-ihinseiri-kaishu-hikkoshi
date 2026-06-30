@@ -1,34 +1,29 @@
-# あるご 遺品整理・不用品回収・引越し LP
+﻿# あるご 遺品整理LP
 
-株式会社あるご向けのランディングページ一式です。
+このリポジトリの正本は、リポジトリ直下のHTMLファイルです。
+公開URLは次です。
 
-## プレビュー
+- https://anetai-droid.github.io/arugo-ihinseiri-kaishu-hikkoshi/preview.html
 
-- [お客様確認用プレビューを開く](https://anetai-droid.github.io/arugo-ihinseiri-kaishu-hikkoshi/preview.html)
+## 編集する場所
 
-## 主なファイル
+通常の修正は、以下だけを編集してください。
 
-- `あるご-プレビュー.html`: 完成プレビュー
-- `あるご-コンセプト.html`: コンセプトページ
-- `あるご-ブログ.html`: ブログページ
-- `あるご-サイトマップ.html`: サイトマップ
-- `あるご-プライバシー.html`: プライバシーポリシー
-- `あるご-法定表記.html`: 法定表記
-- `starter/`: Vite 版の実装ファイル
-- `standalone/`: 単体で開ける HTML 版
-- `画像素材/`: LP 用画像素材
+- `preview.html`
+- `あるご-プレビュー.html`
+- `あるご-コンセプト.html`
+- `あるご-ブログ.html`
+- `あるご-サイトマップ.html`
+- `あるご-プライバシー.html`
+- `あるご-法定表記.html`
+- `あるご-口コミ（非公開）.html`
+- `画像素材/`
 
-## 開発
+## 退避したもの
 
-```powershell
-cd starter
-npm install
-npm run dev
-```
+混乱防止のため、過去の別実装は次に退避しました。
 
-納品前の確認:
+- `_archive/duplicate-site-20260630/starter/`
+- `_archive/duplicate-site-20260630/standalone/`
 
-```powershell
-npm run build
-npm run preflight
-```
+これらは公開URLの正本ではありません。通常は編集しないでください。
