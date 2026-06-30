@@ -40,7 +40,9 @@ h1,h2{font-family:"Yu Mincho","YuMincho","Hiragino Mincho ProN",serif;font-weigh
 .site-header{position:sticky;top:0;z-index:30;background:rgba(255,255,255,.94);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
 .header-inner{min-height:72px;display:flex;align-items:center;justify-content:space-between;gap:24px}
 .brand{display:inline-flex;align-items:center;gap:10px;font-size:1.15rem;color:var(--ink)}
-.brand-mark{display:grid;width:40px;height:40px;place-items:center;border-radius:12px;color:#fff;background:linear-gradient(135deg,var(--primary),var(--navy));font-weight:800}
+.brand-mark{display:grid;width:40px;height:40px;place-items:center;border-radius:12px;overflow:hidden;background:#fff;border:1px solid var(--line)}
+.brand-mark img{width:100%;height:100%;object-fit:contain;padding:2px}
+.brand-logo{width:44px;height:44px;object-fit:contain;display:block}
 .desktop-nav{display:flex;align-items:center;gap:24px;font-size:.9rem;font-weight:700}
 .desktop-nav a:not(.button):hover{color:var(--primary)}
 .menu-button,.mobile-nav{display:none}
@@ -184,7 +186,8 @@ details p{margin:14px 0 0 34px;color:var(--muted)}
 .site-footer{background:var(--navy-2);color:rgba(255,255,255,.82);padding:36px 0}
 .footer-inner{display:flex;flex-wrap:wrap;justify-content:space-between;gap:18px;align-items:center}
 .site-footer .brand{color:#fff}
-.site-footer .brand-mark{background:#fff;color:var(--primary)}
+.site-footer .brand-mark{background:#fff;color:var(--primary);border:1px solid rgba(255,255,255,.55)}
+.brand-mark img{width:100%;height:100%;object-fit:contain;padding:2px}
 .legal-links{display:flex;flex-wrap:wrap;gap:18px;font-size:.78rem;font-weight:700}
 .legal-links a{text-decoration:underline;text-underline-offset:4px}
 .site-footer small{display:block;width:100%;margin-top:6px;color:rgba(255,255,255,.55);font-size:.72rem}
@@ -195,7 +198,10 @@ details p{margin:14px 0 0 34px;color:var(--muted)}
 
 /* legal pages */
 .legal-page{background:var(--surface)}
-.legal-header{padding:46px 0 28px;background:linear-gradient(135deg,var(--primary),var(--navy));color:#fff}
+.legal-header{position:relative;overflow:hidden;padding:46px 0 28px;color:#23302a;text-shadow:0 1px 2px rgba(255,255,255,.55)}
+.legal-header::before{content:"";position:absolute;inset:-30px;background:url("画像素材/18.png") center/cover no-repeat;filter:blur(6px) brightness(1.06);transform:scale(1.06);z-index:0}
+.legal-header::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(255,255,255,.74),rgba(255,255,255,.34));backdrop-filter:blur(2px);z-index:1}
+.legal-header>.container{position:relative;z-index:2}
 .legal-header h1{margin:8px 0 6px;font-size:clamp(1.7rem,4vw,2.6rem)}
 .legal-header p{margin:0;opacity:.85}
 .legal-content{padding:50px 0 80px}
@@ -242,7 +248,7 @@ details p{margin:14px 0 0 34px;color:var(--muted)}
 
 </style></head>
 <body class="legal-page">
-<header class="legal-header"><div class="container"><a class="brand" href="あるご-プレビュー.html"><span class="brand-mark">あ</span><span>あるご</span></a><h1>事業者情報・特定商取引法に基づく表記</h1><p>遺品整理・不用品回収・引っ越しに関する事業者情報</p></div></header>
+<header class="legal-header"><div class="container"><a class="brand" href="あるご-プレビュー.html"><img class="brand-logo" src="画像素材/あるごロゴ.png" alt="あるご" /><span>あるご</span></a><h1>事業者情報・特定商取引法に基づく表記</h1><p>遺品整理・不用品回収・引っ越しに関する事業者情報</p></div></header>
 <main class="legal-content"><div class="container narrow"><p class="template-warning">【公開前チェック】代表者名・メールアドレス・キャンセル規定は未確定のため「要確認」と記載しています。確定後に差し替え、専門家の確認を受けてください。</p>
 <article><table><tbody>
 <tr><th>事業者名</th><td>あるご合同会社</td></tr>

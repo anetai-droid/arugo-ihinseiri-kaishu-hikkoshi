@@ -42,7 +42,9 @@ h1,h2{font-family:"Yu Mincho","YuMincho","Hiragino Mincho ProN",serif;font-weigh
 .site-header{position:sticky;top:0;z-index:30;background:rgba(255,255,255,.94);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
 .header-inner{min-height:72px;display:flex;align-items:center;justify-content:space-between;gap:24px}
 .brand{display:inline-flex;align-items:center;gap:10px;font-size:1.15rem;color:var(--ink)}
-.brand-mark{display:grid;width:40px;height:40px;place-items:center;border-radius:12px;color:#fff;background:linear-gradient(135deg,var(--primary),var(--navy));font-weight:800}
+.brand-mark{display:grid;width:40px;height:40px;place-items:center;border-radius:12px;overflow:hidden;background:#fff;border:1px solid var(--line)}
+.brand-mark img{width:100%;height:100%;object-fit:contain;padding:2px}
+.brand-logo{width:44px;height:44px;object-fit:contain;display:block}
 .desktop-nav{display:flex;align-items:center;gap:24px;font-size:.9rem;font-weight:700}
 .desktop-nav a:not(.button):hover{color:var(--primary)}
 .menu-button,.mobile-nav{display:none}
@@ -186,7 +188,8 @@ details p{margin:14px 0 0 34px;color:var(--muted)}
 .site-footer{background:var(--navy-2);color:rgba(255,255,255,.82);padding:36px 0}
 .footer-inner{display:flex;flex-wrap:wrap;justify-content:space-between;gap:18px;align-items:center}
 .site-footer .brand{color:#fff}
-.site-footer .brand-mark{background:#fff;color:var(--primary)}
+.site-footer .brand-mark{background:#fff;color:var(--primary);border:1px solid rgba(255,255,255,.55)}
+.brand-mark img{width:100%;height:100%;object-fit:contain;padding:2px}
 .legal-links{display:flex;flex-wrap:wrap;gap:18px;font-size:.78rem;font-weight:700}
 .legal-links a{text-decoration:underline;text-underline-offset:4px}
 .site-footer small{display:block;width:100%;margin-top:6px;color:rgba(255,255,255,.55);font-size:.72rem}
@@ -197,7 +200,10 @@ details p{margin:14px 0 0 34px;color:var(--muted)}
 
 /* legal pages */
 .legal-page{background:var(--surface)}
-.legal-header{padding:46px 0 28px;background:linear-gradient(135deg,var(--primary),var(--navy));color:#fff}
+.legal-header{position:relative;overflow:hidden;padding:46px 0 28px;color:#23302a;text-shadow:0 1px 2px rgba(255,255,255,.55)}
+.legal-header::before{content:"";position:absolute;inset:-30px;background:url("画像素材/18.png") center/cover no-repeat;filter:blur(6px) brightness(1.06);transform:scale(1.06);z-index:0}
+.legal-header::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(255,255,255,.74),rgba(255,255,255,.34));backdrop-filter:blur(2px);z-index:1}
+.legal-header>.container{position:relative;z-index:2}
 .legal-header h1{margin:8px 0 6px;font-size:clamp(1.7rem,4vw,2.6rem)}
 .legal-header p{margin:0;opacity:.85}
 .legal-content{padding:50px 0 80px}
@@ -280,13 +286,15 @@ details p{margin:14px 0 0 34px;color:var(--muted)}
 
 </style></head>
 <body class="legal-page">
-<header class="legal-header"><div class="container"><a class="brand" href="あるご-プレビュー.html"><span class="brand-mark">あ</span><span>あるご</span></a><h1>ブログ</h1><p>お知らせ・コラム</p></div></header>
+<header class="legal-header"><div class="container"><a class="brand" href="あるご-プレビュー.html"><img class="brand-logo" src="画像素材/あるごロゴ.png" alt="あるご" /><span>あるご</span></a><h1>ブログ</h1><p>お知らせ・コラム</p></div></header>
 <main class="legal-content"><div class="container narrow"><article><p>遺品整理・生前整理・不用品回収・引っ越しに関する情報や、あるごのお知らせをお届けします。</p>
 <h2>最新の記事</h2>
-<ul>
-<li><strong>生前整理で残すもの</strong> — 生前整理と遺品整理の違い、元気なうちに整理しておくメリットについて。【記事本文は準備中】</li>
-<li><strong>ホームページを開設しました</strong> — 遺品整理・不用品回収・引っ越しのサービス情報をお届けします。【記事本文は準備中】</li>
-</ul>
-<p class="template-warning" style="margin-top:24px">※ブログ記事は準備中のサンプルです。公開前に実際の記事を追加してください。（CMSやnoteなど外部ブログと連携する運用も可能です）</p></article></div></main>
+<div style="border-bottom:1px solid var(--line);padding-bottom:28px;margin-bottom:28px">
+<p style="color:var(--muted);font-size:.85rem;font-weight:700;margin:0 0 6px">2026年6月30日 ・ 生前整理</p>
+<h3 style="font-size:1.3rem;margin:0 0 16px">生前整理で「残すもの・手放すもの」の決め方</h3>
+<p>生前整理とは、元気なうちに自分の持ち物や情報を整理しておくことです。遺品整理がご家族の負担になりやすいのに対し、生前整理はご本人の意思で進められるのが大きな違いです。</p>
+<p>何を残すか迷ったときは、「使っているか」「気持ちがこもっているか」「誰かに引き継ぐか」の3つで分けると判断しやすくなります。思い出の品はすべてを残す必要はなく、写真に撮って記録に残す方法もあります。重要書類（保険・年金・不動産関係）は一つの場所にまとめ、ご家族に在りかを伝えておくと安心です。</p>
+<p>あるごでは、生前整理のご相談から、不用品の回収・買取、お引っ越しまで一括で対応しています。「何から手をつければいいか分からない」段階からお気軽にご相談ください。</p>
+</div></article></div></main>
 <footer class="legal-footer"><div class="container"><a href="あるご-プレビュー.html">トップへ戻る</a><a href="あるご-コンセプト.html">コンセプト</a><a href="あるご-ブログ.html">ブログ</a><a href="あるご-サイトマップ.html">サイトマップ</a><a href="あるご-法定表記.html">事業者情報</a><a href="あるご-プライバシー.html">プライバシー</a></div></footer>
 </body></html>

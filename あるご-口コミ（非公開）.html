@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="robots" content="noindex, nofollow" />
+<title>お客様の声｜あるご</title>
+<style>
+:root{--primary:#2b5d4c;--accent:#c8772f;--ink:#2b2b2b;--muted:#6f6a62;--line:#ece7dd;--bg:#f7f3ec;--gold:#c79a3a;--radius:20px;--shadow:0 18px 40px rgba(40,30,15,.10)}
+*{box-sizing:border-box}
+body{margin:0;font-family:"Hiragino Kaku Gothic ProN","Yu Gothic",sans-serif;color:var(--ink);background:linear-gradient(180deg,#fbf8f2,#f3ede3);line-height:1.85}
+.wrap{max-width:980px;margin:0 auto;padding:64px 22px 80px}
+
+.head{text-align:center;margin-bottom:48px}
+.head .label{display:inline-block;letter-spacing:.28em;font-size:.72rem;font-weight:800;color:var(--accent);margin-bottom:10px}
+.head h1{font-size:clamp(1.7rem,4vw,2.3rem);margin:0 0 12px;color:var(--primary)}
+.head h1 .deco{display:inline-block;width:34px;height:2px;background:var(--accent);vertical-align:middle;margin:0 14px}
+.head p{color:var(--muted);margin:0;font-size:.98rem}
+
+.cards{display:grid;gap:22px;grid-template-columns:repeat(auto-fit,minmax(300px,1fr))}
+.voice-card{position:relative;background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:34px 30px 26px;box-shadow:var(--shadow);overflow:hidden}
+.voice-card::before{content:"\201C";position:absolute;top:6px;right:18px;font-family:Georgia,serif;font-size:5.5rem;line-height:1;color:rgba(43,93,76,.10);font-weight:700}
+.voice-card .stars{color:var(--gold);font-weight:900;letter-spacing:3px;font-size:1.05rem;margin-bottom:14px}
+.voice-card .tag{display:inline-block;background:#f3efe6;color:var(--primary);font-size:.74rem;font-weight:800;border-radius:999px;padding:5px 12px;margin:0 6px 14px 0}
+.voice-card .body{color:var(--ink);font-size:.97rem;margin:0 0 22px;position:relative;z-index:1}
+.voice-card .who{display:flex;align-items:center;gap:12px;border-top:1px solid var(--line);padding-top:16px}
+.voice-card .avatar{width:40px;height:40px;border-radius:50%;background:linear-gradient(135deg,var(--primary),#3f7d68);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:1rem;flex:none}
+.voice-card .who .name{font-size:.86rem;font-weight:700;color:var(--ink)}
+.voice-card .who .role{font-size:.76rem;color:var(--muted)}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="head">
+    <span class="label">VOICE</span>
+    <h1><span class="deco"></span>お客様の声<span class="deco"></span></h1>
+    <p>遺品整理・不用品回収・引っ越しをご利用いただいたお客様の声をご紹介します。</p>
+  </div>
+
+  <div class="cards">
+
+    <div class="voice-card">
+      <div class="stars">★★★★★</div>
+      <div>
+        <span class="tag">遺品整理</span>
+        <span class="tag">東京都内</span>
+        <span class="tag">スタッフ3名・約4時間</span>
+      </div>
+      <p class="body">親の家の遺品整理をお願いしました。こちらの気持ちに寄り添って、一つひとつ丁寧に確認しながら進めてくださり、安心して任せられました。当日の対応もとても早かったです。</p>
+      <div class="who">
+        <div class="avatar">M</div>
+        <div>
+          <div class="name">M.Sさん</div>
+          <div class="role">60代・ご依頼者（2026年6月）</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="voice-card">
+      <div class="stars">★★★★★</div>
+      <div>
+        <span class="tag">不用品回収＋引っ越し</span>
+        <span class="tag">神奈川県</span>
+        <span class="tag">スタッフ2名・約3時間</span>
+      </div>
+      <p class="body">引っ越しに合わせて不要な家具もまとめて回収していただけて助かりました。見積もりが分かりやすく、追加料金もなく安心。スタッフの方の感じもよかったです。</p>
+      <div class="who">
+        <div class="avatar">T</div>
+        <div>
+          <div class="name">T.Kさん</div>
+          <div class="role">40代・ご依頼者（2026年6月）</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+</body>
+</html>
