@@ -296,18 +296,55 @@ details p{margin:14px 0 0 34px;color:var(--muted)}
   .final-cta-links{flex-direction:column;gap:10px}
 }
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{transition:none!important;scroll-behavior:auto!important}.reveal{opacity:1;transform:none}}
-
+/* blog page */
+.blog-intro{font-size:1rem;color:#52655d;margin-bottom:26px}
+.blog-feature{display:grid;gap:18px}
+.blog-post-card{position:relative;padding:26px 28px 30px;border:1px solid #dfead8;border-radius:16px;background:linear-gradient(180deg,#ffffff 0%,#fbfdf8 100%);box-shadow:0 12px 28px rgba(59,88,63,.08)}
+.blog-meta{display:flex;flex-wrap:wrap;gap:8px 12px;align-items:center;margin:0 0 8px;color:#6a7b72;font-size:.85rem;font-weight:800}
+.blog-tag{display:inline-flex;align-items:center;padding:3px 10px;border-radius:999px;background:#eaf6f5;color:#167b86;font-size:.78rem;font-weight:900}
+.blog-post-card h3{font-size:clamp(1.25rem,2.8vw,1.55rem);margin:0 0 14px;color:#172f28}
+.blog-post-card p{margin-bottom:14px}
+.blog-post-card p:last-child{margin-bottom:0}
+.blog-more{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:18px}
+.blog-topic{padding:20px;border:1px solid #dfead8;border-radius:14px;background:rgba(255,255,255,.74);box-shadow:0 8px 20px rgba(59,88,63,.06)}
+.blog-topic b{display:block;margin-bottom:6px;color:#213f35}
+.blog-topic span{display:block;color:#65776f;font-size:.9rem;line-height:1.7}
+.blog-categories{display:flex;flex-wrap:wrap;gap:10px;margin-top:12px}
+.blog-categories span{display:inline-flex;align-items:center;gap:6px;padding:8px 14px;border-radius:999px;background:#edf6ea;color:#27483d;font-weight:800;font-size:.88rem}
+.blog-categories span::before{content:"";width:7px;height:7px;border-radius:50%;background:#9fbc64}
+.blog-note{margin-top:26px;padding:16px 18px;border-left:5px solid #22a6b3;border-radius:12px;background:#f1fbfa;color:#45645d;font-weight:700}
+@media(max-width:760px){.blog-more{grid-template-columns:1fr}.blog-post-card{padding:22px 20px}}
 </style></head>
 <body class="legal-page">
 <header class="legal-header"><div class="container"><a class="brand" href="あるご-プレビュー.html"><img class="brand-logo" src="画像素材/あるごロゴ.png" alt="あるご" /><span>あるご</span></a><h1>ブログ</h1><p>お知らせ・コラム</p></div></header>
-<main class="legal-content"><div class="container narrow"><article><p>遺品整理・生前整理・不用品回収・引っ越しに関する情報や、あるごのお知らせをお届けします。</p>
-<h2>最新の記事</h2>
-<div style="border-bottom:1px solid var(--line);padding-bottom:28px;margin-bottom:28px">
-<p style="color:var(--muted);font-size:.85rem;font-weight:700;margin:0 0 6px">2026年6月30日 ・ 生前整理</p>
-<h3 style="font-size:1.3rem;margin:0 0 16px">生前整理で「残すもの・手放すもの」の決め方</h3>
+<main class="legal-content"><div class="container narrow"><article>
+<p class="blog-intro">遺品整理・生前整理・不用品回収・引っ越しに関する情報や、あるごからのお知らせをお届けします。まだ記事数は少ないため、読み物として見やすいようにテーマ別の案内もまとめています。</p>
+
+<section class="blog-feature" aria-labelledby="latest-post">
+<h2 id="latest-post">最新の記事</h2>
+<div class="blog-post-card">
+<p class="blog-meta"><span>2026年6月30日</span><span class="blog-tag">生前整理</span></p>
+<h3>生前整理で「残すもの・手放すもの」の決め方</h3>
 <p>生前整理とは、元気なうちに自分の持ち物や情報を整理しておくことです。遺品整理がご家族の負担になりやすいのに対し、生前整理はご本人の意思で進められるのが大きな違いです。</p>
-<p>何を残すか迷ったときは、「使っているか」「気持ちがこもっているか」「誰かに引き継ぐか」の3つで分けると判断しやすくなります。思い出の品はすべてを残す必要はなく、写真に撮って記録に残す方法もあります。重要書類（保険・年金・不動産関係）は一つの場所にまとめ、ご家族に在りかを伝えておくと安心です。</p>
-<p>あるごでは、生前整理のご相談から、不用品の回収・買取、お引っ越しまで一括で対応しています。「何から手をつければいいか分からない」段階からお気軽にご相談ください。</p>
-</div></article></div></main>
+<p>何を残すか迷ったときは、「使っているか」「気持ちがこもっているか」「誰かに引き継ぐか」の3つで分けると判断しやすくなります。思い出の品はすべてを残す必要はなく、写真に撮って記録に残す方法もあります。</p>
+<p>あるごでは、生前整理のご相談から、不用品の回収・買取、お引っ越しまで一括で対応しています。何から手をつければいいか分からない段階からお気軽にご相談ください。</p>
+</div>
+</section>
+
+<section aria-labelledby="upcoming-topics">
+<h2 id="upcoming-topics">これから追加するテーマ</h2>
+<div class="blog-more">
+<div class="blog-topic"><b>片付け前の準備</b><span>写真・書類・貴重品をどう分けるか、初動で迷いやすい点を整理します。</span></div>
+<div class="blog-topic"><b>買取できるもの</b><span>家具・家電・趣味用品など、回収前に確認したい品目を紹介します。</span></div>
+<div class="blog-topic"><b>引っ越しとの同時対応</b><span>整理、搬出、引っ越しをまとめるときの流れと注意点をまとめます。</span></div>
+</div>
+<p class="blog-note">記事は少しずつ増やしていく前提のページです。いまは「最新記事」と「相談前に知りたいテーマ」がすぐ分かる構成にしています。</p>
+</section>
+
+<section aria-labelledby="blog-categories">
+<h2 id="blog-categories">カテゴリ</h2>
+<div class="blog-categories"><span>生前整理</span><span>遺品整理</span><span>不用品回収</span><span>買取</span><span>引っ越し</span></div>
+</section>
+</article></div></main>
 <footer class="legal-footer"><div class="container"><a href="あるご-プレビュー.html">トップへ戻る</a><a href="あるご-コンセプト.html">コンセプト</a><a href="あるご-ブログ.html">ブログ</a><a href="あるご-サイトマップ.html">サイトマップ</a><a href="あるご-法定表記.html">事業者情報</a><a href="あるご-プライバシー.html">プライバシー</a></div></footer>
 </body></html>
